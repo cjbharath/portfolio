@@ -384,3 +384,7 @@ footer .link-group a:hover{
     color: #fff;
     animation: pulse 3s infinite;
 }
+a.read-more-btn.link {
+    margin-top: 1.2%;
+    display: inline-block;
+}
