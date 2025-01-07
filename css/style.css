@@ -54,7 +54,7 @@ body{
 .c-orange{
     color: #6f34fe;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .home p{
     width: fit-content;
@@ -399,3 +399,7 @@ footer {
 .post {
     margin-bottom: 15px; /* Ensure consistent spacing */
 }
+.nav-menu {
+    margin-left: auto;
+  }
+  
