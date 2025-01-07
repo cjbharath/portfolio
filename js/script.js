@@ -86,18 +86,29 @@ let progressreact = setInterval(() => {
 // filter using javascript
 $(document).ready(function () {
   $(".filter-item").click(function () {
-    const filterValue = $(this).attr("data-filter");
-    const portfolioPosts = $("#portfolio .post"); // Limit scope to portfolio posts
+      const filterValue = $(this).attr("data-filter");
+      const portfolioPosts = $("#portfolio .post"); // Limit scope to portfolio posts
 
-    if (filterValue === "all") {
-      portfolioPosts.show("1000");
-    } else {
-      portfolioPosts.hide("1000").filter("." + filterValue).show("1000");
-    }
+      if (filterValue === "all") {
+          portfolioPosts.show("1000");
+      } else {
+          portfolioPosts.hide("1000").filter("." + filterValue).show("1000");
+      }
 
-    // Highlight the selected filter button
-    $(".filter-item").removeClass("active");
-    $(this).addClass("active");
+      // Adjust the height of the portfolio section to fit visible items
+      const visiblePosts = portfolioPosts.filter(":visible");
+      const totalHeight = visiblePosts
+          .map(function () {
+              return $(this).outerHeight(true);
+          })
+          .get()
+          .reduce((acc, height) => acc + height, 0);
+
+      $("#portfolio .portfolio-body").height(totalHeight);
+
+      // Highlight the selected filter button
+      $(".filter-item").removeClass("active");
+      $(this).addClass("active");
   });
 });
 
