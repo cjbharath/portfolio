@@ -86,19 +86,21 @@ let progressreact = setInterval(() => {
 // filter using javascript
 $(document).ready(function () {
   $(".filter-item").click(function () {
-    const value = $(this).attr("data-filter");
-    if (value == "all") {
-      $(".post").show("1000");
+    const filterValue = $(this).attr("data-filter");
+    const portfolioPosts = $("#portfolio .post"); // Limit scope to portfolio posts
+
+    if (filterValue === "all") {
+      portfolioPosts.show("1000");
     } else {
-      $(".post")
-        .not("." + value)
-        .hide("1000");
-      $(".post")
-        .filter("." + value)
-        .show("1000");
+      portfolioPosts.hide("1000").filter("." + filterValue).show("1000");
     }
+
+    // Highlight the selected filter button
+    $(".filter-item").removeClass("active");
+    $(this).addClass("active");
   });
 });
+
 
 
 // javascript for sticky navbar even if u scroll the navbar will be fixed

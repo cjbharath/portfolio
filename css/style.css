@@ -388,3 +388,8 @@ a.read-more-btn.link {
     margin-top: 1.2%;
     display: inline-block;
 }
+footer {
+    clear: both;
+    position: relative;
+    z-index: 1;
+}
