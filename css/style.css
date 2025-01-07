@@ -388,29 +388,14 @@ a.read-more-btn.link {
     margin-top: 1.2%;
     display: inline-block;
 }
-#portfolio {
-    position: relative;
-  }
-  
-  #portfolio .portfolio-body {
-    min-height: 300px; /* Minimum height for the portfolio content */
-    overflow: hidden; /* Prevent layout breaking */
-    transition: all 0.3s ease-in-out; /* Smooth transition for height */
-  }
-  
-  footer {
+footer {
     clear: both;
     position: relative;
     z-index: 1;
-    background-color: #211e39;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+}
+#portfolio .portfolio-body {
+    padding: 0; /* Adjust as necessary */
+}
+.post {
+    margin-bottom: 15px; /* Ensure consistent spacing */
+}

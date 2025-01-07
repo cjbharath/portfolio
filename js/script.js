@@ -84,33 +84,33 @@ let progressreact = setInterval(() => {
 
 
 // filter using javascript
-$(document).ready(function () {
-  $(".filter-item").click(function () {
-    const filterValue = $(this).attr("data-filter");
-    const portfolioPosts = $("#portfolio .post");
+// $(document).ready(function () {
+//   $(".filter-item").click(function () {
+//       const filterValue = $(this).attr("data-filter");
+//       const portfolioPosts = $("#portfolio .post"); // Limit scope to portfolio posts
 
-    if (filterValue === "all") {
-      portfolioPosts.fadeIn("500"); // Show all items smoothly
-    } else {
-      portfolioPosts.hide().filter("." + filterValue).fadeIn("500"); // Show filtered items smoothly
-    }
+//       if (filterValue === "all") {
+//           portfolioPosts.show("500");
+//       } else {
+//           portfolioPosts.hide("1000").filter("." + filterValue).show("1000");
+//       }
 
-    // Remove unnecessary white space in portfolio
-    $("#portfolio .portfolio-body").css("min-height", 0);
+//       // Adjust the height of the portfolio section to fit visible items
+//       const visiblePosts = portfolioPosts.filter(":visible");
+//       const totalHeight = visiblePosts
+//           .map(function () {
+//               return $(this).outerHeight(true);
+//           })
+//           .get()
+//           .reduce((acc, height) => acc + height, 0);
 
-    // Scroll to portfolio section to ensure visibility of the footer
-    $("html, body").animate(
-      {
-        scrollTop: $("#portfolio").offset().top,
-      },
-      500
-    );
+//       $("#portfolio .portfolio-body").height(totalHeight);
 
-    // Highlight the selected filter button
-    $(".filter-item").removeClass("active");
-    $(this).addClass("active");
-  });
-});
+//       // Highlight the selected filter button
+//       $(".filter-item").removeClass("active");
+//       $(this).addClass("active");
+//   });
+// });
 
 
 
