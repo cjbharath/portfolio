@@ -1,5 +1,3 @@
-[build]
-  publish = "dist" # or "build" or your actual output folder
 
 [[headers]]
   for = "/*"
