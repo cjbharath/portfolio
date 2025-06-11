@@ -1,4 +1,8 @@
 /*
-  User-Agent: Googlebot
   X-Robots-Tag: all
   Cache-Control: public, max-age=0
+  Content-Type: text/html; charset=UTF-8
+
+  # Ensure Googlebot is not blocked
+  User-Agent: Googlebot
+  Allow: /

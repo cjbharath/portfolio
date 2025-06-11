@@ -1,0 +1,8 @@
+[build]
+  publish = "dist" # or "build" or your actual output folder
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "all"
+    Cache-Control = "public, max-age=0"
