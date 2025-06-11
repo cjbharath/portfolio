@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://c-j-bharath-portfolio.netlify.app/sitemap.xml
