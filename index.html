@@ -634,11 +634,11 @@
   <script>
   window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
-    preloader.style.transition = 'opacity 1.5s ease'; // slower fade
+    preloader.style.transition = 'opacity 0.5s ease'; // slower fade
     preloader.style.opacity = '0';
     setTimeout(() => {
       preloader.style.display = 'none';
-    }, 1500); // matches the 1.5s fade duration
+    }, 500); // matches the 1.5s fade duration
   });
 </script>
 
