@@ -101,7 +101,7 @@
 
 <body>
 
-  <!--  Preloader Start -->
+<!--  Preloader Start -->
 <div id="preloader" style="
   position: fixed;
   width: 100vw;
@@ -112,12 +112,28 @@
   justify-content: center;
   align-items: center;
 ">
-  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-  <dotlottie-wc src="https://lottie.host/59e93124-12dd-49fe-933b-f9b5fe86440c/RzrxfMa8di.lottie"
-    style="width: 300px; height: 300px;" speed="1" autoplay loop>
-  </dotlottie-wc>
+  <div style="position: relative; width: 300px; height: 300px;">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    <dotlottie-wc 
+      src="https://lottie.host/59e93124-12dd-49fe-933b-f9b5fe86440c/RzrxfMa8di.lottie"
+      style="width: 300px; height: 300px;" 
+      speed="1" autoplay loop>
+    </dotlottie-wc>
+
+    <!-- Your Logo in center -->
+    <img src="images/cj-violet.png" alt="Logo" style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    ">
+  </div>
 </div>
 <!--  Preloader End -->
+
 
   <!-- navbar starts -->
   <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
