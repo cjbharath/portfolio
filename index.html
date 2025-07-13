@@ -95,9 +95,30 @@
 
   <!-- jquery cdn link  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  
 </head>
 
 <body>
+
+  <!--  Preloader Start -->
+<div id="preloader" style="
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+">
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+  <dotlottie-wc src="https://lottie.host/59e93124-12dd-49fe-933b-f9b5fe86440c/RzrxfMa8di.lottie"
+    style="width: 300px; height: 300px;" speed="1" autoplay loop>
+  </dotlottie-wc>
+</div>
+<!--  Preloader End -->
+
   <!-- navbar starts -->
   <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
     <div class="container-fluid px-5">
@@ -609,6 +630,18 @@
 
   <!-- custom js file linking -->
   <script src="js/script.js"></script>
+
+  <script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.style.transition = 'opacity 1.5s ease'; // slower fade
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 1500); // matches the 1.5s fade duration
+  });
+</script>
+
 
 </body>
 
