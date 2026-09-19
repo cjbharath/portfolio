@@ -45,7 +45,7 @@ let phpProgress = document.querySelector(".php"),
   phpValue = document.querySelector(".php-progress");
 
 let phpStartValue = 0,
-  phpEndValue = 75,
+  phpEndValue = 85,
   phpspeed = 30;
 
 let progressphp = setInterval(() => {

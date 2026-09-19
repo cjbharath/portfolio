@@ -411,4 +411,122 @@ footer {
 .nav-menu {
     margin-left: auto;
   }
+
+/* Experience section styling */
+.experience{
+    background-color: rgb(234, 234, 249);
+}
+.exp-card{
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 5px 20px rgba(63, 57, 109, 0.08);
+    border-left: 6px solid #fca61f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.exp-card + .exp-card{
+    margin-top: 1.5rem;
+}
+.exp-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(63, 57, 109, 0.16);
+}
+.exp-card-alt{
+    border-left-color: #6f34fe;
+}
+.exp-card-header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+.exp-card-icon{
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fca61f, #ff7a00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.exp-card-logo{
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ededed;
+    background: #fff;
+}
+.exp-card-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.exp-card-meta{
+    flex: 1 1 auto;
+    min-width: 200px;
+}
+.exp-title{
+    color: #3f396d;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.exp-sub{
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+.exp-company{
+    font-weight: 600;
+    color: #6f34fe;
+}
+.exp-dot{
+    margin: 0 0.5rem;
+}
+.exp-badge{
+    display: inline-flex;
+    align-items: center;
+    background: #fca61f;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+.exp-list{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.exp-list li{
+    position: relative;
+    padding-left: 1.9rem;
+    margin-bottom: 0.75rem;
+    color: #555;
+    line-height: 1.55;
+}
+.exp-list li:last-child{
+    margin-bottom: 0;
+}
+.exp-list li i{
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #20c997;
+    font-size: 1rem;
+}
+@media (max-width: 767px){
+    .exp-card{
+        padding: 1.3rem;
+    }
+    .exp-badge{
+        margin-left: 76px;
+    }
+}
   
