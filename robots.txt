@@ -1,0 +1,5 @@
+# https://c-j-bharath-portfolio.netlify.app/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://c-j-bharath-portfolio.netlify.app/sitemap.xml

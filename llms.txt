@@ -1,0 +1,19 @@
+# Bharath Vishnu C J
+
+> Software Engineer in Salem, Tamil Nadu, India with 2.5+ years of experience building secure, scalable full-stack applications with .NET, Angular and SQL Server, and driving cloud migration and integration across Azure and AWS. Currently a Software Engineer at Vee Healthtek (since August 2025).
+
+Contact: bharathvishnu2522003@gmail.com | +91 94435 89239 | LinkedIn: https://linkedin.com/in/c-j-bharath | GitHub: https://github.com/cjbharath
+
+## Key facts
+- Role: Software Engineer, .NET and Angular Full Stack Developer, SQL Server (core strength).
+- Experience: Vee Healthtek (Aug 2025 to present), OneYes Infotech Solutions, Software Developer (Oct 2023 to Mar 2025).
+- Recognition: Best Performer Award within the first 3 months at Vee Healthtek; Regional second prize, Metaverse Challenge 2022; first prize, National Level Coding Contest 2021.
+- Education: B.E. Computer Science and Engineering, Knowledge Institute of Technology, Salem (2020 to 2024, CGPA 8.22).
+- Security work: ECDH key exchange and end-to-end payload encryption between Angular and .NET, the same public-key agreement method used in WhatsApp's Signal Protocol (via Curve25519).
+
+## Pages
+- [Portfolio home page](https://c-j-bharath-portfolio.netlify.app/): about, skills, projects, experience, achievements and contact.
+- [Resume (PDF)](https://c-j-bharath-portfolio.netlify.app/src/Bharath_Vishnu-Resume.pdf): full updated resume.
+
+## Optional
+- [Ocean Guard research paper (JETIR)](https://www.jetir.org/view?paper=JETIR2403A78)

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://c-j-bharath-portfolio.netlify.app/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://c-j-bharath-portfolio.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://c-j-bharath-portfolio.netlify.app/" />
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/img_frame.png</image:loc>
+      <image:title>Portrait of Bharath Vishnu C J, Software Engineer</image:title>
+      <image:caption>Bharath Vishnu C J portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/og-image.jpg</image:loc>
+      <image:title>Bharath Vishnu C J, Software Engineer for .NET, Angular and SQL Server</image:title>
+      <image:caption>Bharath Vishnu C J share image</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/ilearn.webp</image:loc>
+      <image:title>Learning Management System home page</image:title>
+      <image:caption>Learning Management System built at OneYes Infotech Solutions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/ocean_guard.webp</image:loc>
+      <image:title>Ocean Guard maritime safety Android application</image:title>
+      <image:caption>Ocean Guard, published in JETIR</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/apa.webp</image:loc>
+      <image:title>AADU PULI AATAM AR/VR game menu</image:title>
+      <image:caption>AADU PULI AATAM, an AR/VR game built in Unity</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/pixel_perfection.webp</image:loc>
+      <image:title>Pixel Perfection image editing platform</image:title>
+      <image:caption>Pixel Perfection, built with Python, Flask, IBM DB and Docker</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/tot.webp</image:loc>
+      <image:title>Travel on Time bus tracking app prototype</image:title>
+      <image:caption>Travel on Time, designed in Figma</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/nm.webp</image:loc>
+      <image:title>Metaverse Challenge 2022 prize ceremony</image:title>
+      <image:caption>Regional second prize, Metaverse Challenge 2022</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/pitchperfect.webp</image:loc>
+      <image:title>Pitch Perfect '22 first prize</image:title>
+      <image:caption>First prize at Pitch Perfect 22, sponsored by IEEE</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/coding.webp</image:loc>
+      <image:title>National Level Coding Contest 2021 certificate</image:title>
+      <image:caption>First prize, National Level Coding Contest 2021</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://c-j-bharath-portfolio.netlify.app/images/publication.webp</image:loc>
+      <image:title>Ocean Guard research paper</image:title>
+      <image:caption>Ocean Guard research paper published in JETIR</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://c-j-bharath-portfolio.netlify.app/src/Bharath_Vishnu-Resume.pdf</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

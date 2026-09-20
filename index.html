@@ -1,807 +1,1270 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Bharath Vishnu C J</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://c-j-bharath-portfolio.netlify.app/images/cj-violet.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- ===== Primary SEO ===== -->
+  <title>Bharath Vishnu C J | .NET & Angular Full Stack Developer, Salem</title>
+  <meta name="description" content="Bharath Vishnu C J is a Software Engineer in Salem, India with 2.5+ years in .NET, Angular, SQL Server and Azure. See his projects, skills and resume." />
+  <meta name="keywords" content="Bharath Vishnu C J, Bharath Vishnu, C J Bharath,C J Bharath Vishnu,C.J.Bharath Vishnu,C.J.Bharath, Bharath CJ, software engineer, .NET developer, Angular developer, full stack developer, SQL Server developer, Azure developer, microservices, micro frontend, ECDH encryption, Salem, Tamil Nadu, India, portfolio, resume" />
+  <meta name="author" content="Bharath Vishnu C J" />
+  <meta name="application-name" content="Bharath Vishnu C J Portfolio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#f6f6fc" />
   <link rel="canonical" href="https://c-j-bharath-portfolio.netlify.app/" />
+  <link rel="alternate" hreflang="en" href="https://c-j-bharath-portfolio.netlify.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://c-j-bharath-portfolio.netlify.app/" />
+  <link rel="alternate" type="application/pdf" href="https://c-j-bharath-portfolio.netlify.app/src/Bharath_Vishnu-Resume.pdf" title="Bharath Vishnu C J - Resume (PDF)" />
+  <link rel="me" href="https://linkedin.com/in/c-j-bharath" />
+  <link rel="me" href="https://github.com/cjbharath" />
 
+  <!-- Local relevance (Bing and other engines read these) -->
+  <meta name="geo.region" content="IN-TN" />
+  <meta name="geo.placename" content="Salem, Tamil Nadu, India" />
+  <meta name="geo.position" content="11.6643;78.1460" />
+  <meta name="ICBM" content="11.6643, 78.1460" />
+  <meta name="language" content="English" />
 
-  <!-- Open Graph meta tags -->
-  <meta name="description" content="Welcome to the official portfolio of Bharath Vishnu C J – Software Engineer specializing in .NET, Angular, SQL Server and Azure Cloud. Discover professional experience, projects, skills, and achievements.">
-  <meta name="keywords" content="Bharath Vishnu C J, Bharath Vishnu, C J Bharath, portfolio, software engineer, .NET developer, angular developer, full stack developer, SQL Server developer, Azure developer, web developer, UI/UX designer, programmer, web design, web development, mobile app developer, Salem, Tamil Nadu">
-  <meta property="og:title" content="BHARATH VISHNU C J - Portfolio">
-  <meta property="og:description" content="Explore BHARATH VISHNU C J's portfolio showcasing professional experience in .NET, Angular, SQL Server and Azure Cloud, and expertise in Web App Development, Programming, UI/UX Design, and more.">
-  <meta property="og:image" content="https://c-j-bharath-portfolio.netlify.app/images/cj-violet.png">
-  <meta property="og:image:alt" content="BHARATH VISHNU C J Portfolio">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://c-j-bharath-portfolio.netlify.app/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Portfolio - Bharath Vishnu C J">
-  <meta name="twitter:description" content="Web App Developer • UI/UX Designer • Video Editor">
-  <meta name="twitter:image" content="https://c-j-bharath-portfolio.netlify.app/images/cj-violet.png">
-  <meta name="robots" content="index, follow">
+  <!-- Search-engine ownership: Google is verified through google54faf7009eda6171.html and Bing/IndexNow through
+       01f571c3582e491bb0753decfbfe0c36.txt (both in the site root). If Bing Webmaster Tools gives you a meta code
+       instead, paste it here:  <meta name="msvalidate.01" content="YOUR_BING_CODE" />  -->
 
+  <!-- ===== Open Graph (Facebook, LinkedIn, WhatsApp, Slack, Discord) ===== -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Bharath Vishnu C J | Portfolio" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:url" content="https://c-j-bharath-portfolio.netlify.app/" />
+  <meta property="og:title" content="Bharath Vishnu C J | .NET & Angular Full Stack Developer, Salem" />
+  <meta property="og:description" content="Bharath Vishnu C J is a Software Engineer in Salem, India with 2.5+ years in .NET, Angular, SQL Server and Azure. See his projects, skills and resume." />
+  <meta property="og:image" content="https://c-j-bharath-portfolio.netlify.app/images/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://c-j-bharath-portfolio.netlify.app/images/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Bharath Vishnu C J, Software Engineer for .NET, Angular and SQL Server, in a glowing ring portrait" />
+  <meta property="profile:first_name" content="Bharath Vishnu" />
+  <meta property="profile:last_name" content="C J" />
 
-<script type="application/ld+json">
+  <!-- ===== Twitter / X cards ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bharath Vishnu C J | .NET & Angular Full Stack Developer, Salem" />
+  <meta name="twitter:description" content="Bharath Vishnu C J is a Software Engineer in Salem, India with 2.5+ years in .NET, Angular, SQL Server and Azure. See his projects, skills and resume." />
+  <meta name="twitter:image" content="https://c-j-bharath-portfolio.netlify.app/images/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Bharath Vishnu C J, Software Engineer for .NET, Angular and SQL Server" />
+
+  <!-- ===== Icons and app manifest ===== -->
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-chrome-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#6a45ff" />
+  <meta name="apple-mobile-web-app-title" content="Bharath CJ" />
+
+  <!-- ===== Structured data (JSON-LD): Person, ProfilePage, projects, publication, navigation ===== -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Bharath Vishnu C J",
-  "url": "https://c-j-bharath-portfolio.netlify.app/",
-  "image": "https://c-j-bharath-portfolio.netlify.app/images/cj-violet.png",
-  "sameAs": [
-    "https://linkedin.com/in/c-j-bharath",
-    "mailto:bharathvishnu2522003@gmail.com"
-  ],
-  "alumniOf": {
-    "@type": "College",
-    "name": "Knowledge Institute of Technology"
-  },
-  "jobTitle": "Software Engineer | .NET & Angular Full Stack Developer | SQL Server",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Vee Healthtek"
-  },
-  "knowsAbout": [
-    "Web App Development",
-    "Programming",
-    "UI/UX Design",
-    "Video Editing",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "Angular",
-    ".NET Core",
-    "ASP.NET Web API",
-    "C#",
-    "SQL Server",
-    "PHP",
-    "MySQL",
-    "Python",
-    "C",
-    "Unity",
-    "AR/VR",
-    "Microsoft Azure",
-    "Azure Functions",
-    "Azure Service Bus",
-    "Azure Data Factory",
-    "AWS",
-    "SignalR",
-    "WebSockets",
-    "REST APIs",
-    "Microservices Architecture",
-    "Angular Micro Frontend",
-    "ECDH Key Exchange",
-    "SonarQube",
-    "npm & NuGet Package Publishing",
-    "CI/CD"
-  ],
-  "gender": "Male",
-  "nationality": "Indian",
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Salem, Tamil Nadu, India"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#website",
+      "url": "https://c-j-bharath-portfolio.netlify.app/",
+      "name": "Bharath Vishnu C J | Portfolio",
+      "description": "Bharath Vishnu C J is a Software Engineer in Salem, India with 2.5+ years in .NET, Angular, SQL Server and Azure. See his projects, skills and resume.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+      }
+    },
+    {
+      "@type": [
+        "WebPage",
+        "ProfilePage"
+      ],
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#webpage",
+      "url": "https://c-j-bharath-portfolio.netlify.app/",
+      "name": "Bharath Vishnu C J | .NET & Angular Full Stack Developer, Salem",
+      "description": "Bharath Vishnu C J is a Software Engineer in Salem, India with 2.5+ years in .NET, Angular, SQL Server and Azure. See his projects, skills and resume.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#website"
+      },
+      "about": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+      },
+      "mainEntity": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#primaryimage"
+      },
+      "dateModified": "2026-09-20"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#primaryimage",
+      "url": "https://c-j-bharath-portfolio.netlify.app/images/og-image.jpg",
+      "contentUrl": "https://c-j-bharath-portfolio.netlify.app/images/og-image.jpg",
+      "width": 1200,
+      "height": 630,
+      "caption": "Bharath Vishnu C J, Software Engineer (.NET, Angular, SQL Server)"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#person",
+      "name": "Bharath Vishnu C J",
+      "alternateName": [
+        "Bharath Vishnu",
+        "C J Bharath",
+        "Bharath CJ",
+        "Bharath Vishnu CJ"
+      ],
+      "url": "https://c-j-bharath-portfolio.netlify.app/",
+      "mainEntityOfPage": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://c-j-bharath-portfolio.netlify.app/images/img_frame.png",
+        "width": 900,
+        "height": 894,
+        "caption": "Portrait of Bharath Vishnu C J"
+      },
+      "jobTitle": "Software Engineer",
+      "description": "Software Engineer with 2.5+ years of experience at Vee Healthtek building full-stack applications with Angular and .NET on SQL Server, designing microservices and Angular micro-frontends, securing communication with ECDH key exchange and end-to-end payload encryption, and driving cloud migration and integration across Azure and AWS.",
+      "email": "mailto:bharathvishnu2522003@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salem",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Salem, Tamil Nadu, India",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Salem",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        }
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Vee Healthtek"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Knowledge Institute of Technology",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Salem",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          }
+        }
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Software Engineer",
+        "description": ".NET and Angular full stack development, SQL Server, microservices, secure communication and cloud integration on Azure and AWS.",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Salem"
+        },
+        "skills": ".NET Core, ASP.NET Web API, Angular, TypeScript, SQL Server, Azure, microservices, SignalR"
+      },
+      "knowsAbout": [
+        "C#",
+        ".NET Core",
+        "ASP.NET Web API",
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "SQL Server",
+        "T-SQL",
+        "Microservices Architecture",
+        "Angular Micro Frontend",
+        "Module Federation",
+        "RESTful API Design",
+        "ECDH Key Exchange",
+        "End-to-End Payload Encryption",
+        "SonarQube",
+        "Microsoft Azure",
+        "Azure Functions",
+        "Azure Service Bus",
+        "Azure Data Factory",
+        "Azure API Gateway",
+        "Redis Cache",
+        "AWS",
+        "SignalR",
+        "WebSockets",
+        "npm and NuGet package publishing",
+        "CI/CD",
+        "Git",
+        "Windows IIS",
+        "Selenium automation testing",
+        "Agile and Scrum"
+      ],
+      "award": [
+        "Best Performer Award, Vee Healthtek (2025)",
+        "Regional Level Second Prize, Metaverse Challenge 2022 (TN Naan Mudhalvan AR/VR Development)",
+        "First Prize, National Level Coding Contest 2021, Kongunadu College of Engineering and Technology",
+        "First Prize, Pitch Perfect '22, sponsored by IEEE"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AWS Security, Identity and Compliance",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Udemy"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "IT Academy: Cloud and Virtualization Concepts",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "VMware"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "The Fundamentals of Network Security",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Udemy"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Introduction to Cloud",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "TNSDC, powered by IBM"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Junior Web Developer",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "TN Skills and Naan Mudhalvan"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "CISCO AICTE Virtual Internship Program 2022, Computer Networks",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "CISCO Networking Academy with AICTE"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Google Supported Virtual Internship, Android Basics in Kotlin",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "SmartInternz in collaboration with AICTE"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://linkedin.com/in/c-j-bharath",
+        "https://github.com/cjbharath"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#projects",
+      "name": "Projects by Bharath Vishnu C J",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Real-time notification system",
+            "description": "Real-time notification system built end to end with Azure Service Bus and SignalR, Angular UI components, backend APIs, stored procedures and rule-engine driven triggers.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Encrypted payload library",
+            "description": "ECDH key exchange between an Angular front-end and a .NET Web API, encrypting the full application payload end to end through a reusable helper published as a shared library.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Micro-frontend shell",
+            "description": "Angular micro-frontend architecture with Module Federation, unifying multiple remote applications into a single shell with a central dynamic routing service.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "AWS to Azure migration",
+            "description": "Migration of a core application stack from AWS to Azure, including API Gateway, Redis Cache, Blob Storage, Azure Functions and Data Factory pipelines.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Learning Management System",
+            "description": "Full-stack web application for course creation, content delivery and progress tracking, built at OneYes Infotech Solutions.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects",
+            "image": "https://c-j-bharath-portfolio.netlify.app/images/ilearn.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Job Portal",
+            "description": "Job Portal application features, API integration and database operations, built at OneYes Infotech Solutions.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Ocean Guard",
+            "description": "Deep-sea fishermen monitoring and maritime safety Android application, published as a research paper in JETIR.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects",
+            "image": "https://c-j-bharath-portfolio.netlify.app/images/ocean_guard.webp",
+            "applicationCategory": "Android application",
+            "operatingSystem": "Android"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "AADU PULI AATAM",
+            "description": "AR/VR game built in Unity.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects",
+            "image": "https://c-j-bharath-portfolio.netlify.app/images/apa.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Pixel Perfection",
+            "description": "Image editing platform built with Python, Flask, IBM DB and Docker.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects",
+            "image": "https://c-j-bharath-portfolio.netlify.app/images/pixel_perfection.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Travel on Time",
+            "description": "Bus tracking app, designed and prototyped in Figma.",
+            "creator": {
+              "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+            },
+            "url": "https://c-j-bharath-portfolio.netlify.app/#projects",
+            "image": "https://c-j-bharath-portfolio.netlify.app/images/tot.webp"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#publication",
+      "headline": "Ocean Guard: Advanced Technology for Deep-Sea Fishermen Monitoring and Maritime Safety",
+      "name": "Ocean Guard: Advanced Technology for Deep-Sea Fishermen Monitoring and Maritime Safety",
+      "url": "https://www.jetir.org/view?paper=JETIR2403A78",
+      "author": {
+        "@id": "https://c-j-bharath-portfolio.netlify.app/#person"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "JETIR (Journal of Emerging Technologies and Innovative Research)"
+      },
+      "image": "https://c-j-bharath-portfolio.netlify.app/images/publication.webp"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "@id": "https://c-j-bharath-portfolio.netlify.app/#nav",
+      "name": [
+        "About",
+        "Skills",
+        "Projects",
+        "Experience",
+        "Achievements",
+        "Contact"
+      ],
+      "url": [
+        "https://c-j-bharath-portfolio.netlify.app/#about",
+        "https://c-j-bharath-portfolio.netlify.app/#skills",
+        "https://c-j-bharath-portfolio.netlify.app/#projects",
+        "https://c-j-bharath-portfolio.netlify.app/#experience",
+        "https://c-j-bharath-portfolio.netlify.app/#achievements",
+        "https://c-j-bharath-portfolio.netlify.app/#contact"
+      ]
+    }
+  ]
 }
-</script>
+  </script>
 
-
-
-
-  <!-- bootstrap css cdn link  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-
-  <!-- custom css file -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- google font link -->
+  <!-- ===== Performance: connect early, load the hero portrait first ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-
-  <!-- bootstrap icon cdn link  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-
-  <!-- for adding animation to website we have use AOS library 
-    AOS Library css file cdn link -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <!-- jquery cdn link  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-  
+  <link rel="preload" as="image" href="images/img_frame.webp" type="image/webp" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h16"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+      <symbol id="i-package" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+      <symbol id="i-brief" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></symbol>
+      <symbol id="i-phone-app" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+      <symbol id="i-gamepad" viewBox="0 0 24 24"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    </defs>
+  </svg>
 
-<!--  Preloader Start -->
-<div id="preloader" style="
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-">
-  <div style="position: relative; width: 300px; height: 300px;">
-    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-    <dotlottie-wc 
-      src="https://lottie.host/59e93124-12dd-49fe-933b-f9b5fe86440c/RzrxfMa8di.lottie"
-      style="width: 300px; height: 300px;" 
-      speed="1" autoplay loop>
-    </dotlottie-wc>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
 
-    <!-- Your Logo in center -->
-    <img src="images/cj-violet.png" alt="Logo" style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    ">
-  </div>
-</div>
-<!--  Preloader End -->
-
-
-  <!-- navbar starts -->
-  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-    <div class="container-fluid px-5">
-      <a href="index.html"><img src="./images/cj-violet.png" width="60px" height="60px" alt="BHARATH VISHNU C J"></a>
-      <button id="nav-menu" class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <i class="bi bi-menu-button-fill"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#service">Expertise</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Achievements">Achievements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Internships">Internships</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <a href="./src/Bharath_Vishnu-Resume.pdf" download="Bharath_Vishnu_Resume"
-        style="text-decoration: none; color: #fff;">
-        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
-          Download CV
-        </button>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="nav-bar">
+      <a class="brand" href="#top" aria-label="Bharath Vishnu C J, back to top">
+        <span class="brand-mark imgwrap"><img decoding="async" width="320" height="320" class="logo-on-light" src="images/cj-violet.png" alt="" /><img decoding="async" width="320" height="320" class="logo-on-dark" src="images/cj-white.png" alt="" /><!-- <span class="fb" aria-hidden="true">CJ</span> --></span>
+        <span class="brand-name">Bharath Vishnu</span>
       </a>
 
-    </div>
-  </nav>
-  <!-- navbar ends here -->
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cv"><a href="./src/Bharath_Vishnu-Resume.pdf" download>Download resume</a></li>
+        </ul>
+      </nav>
 
-  <!-- home section starts  -->
-  <section class="home pt-5 pb-5" id="home">
-    <div class="row justify-content-evenly align-middle">
-      <!-- here data-aos is used for adding aos animation  -->
-      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-        <h1 style="color: #3f396d">
-          Hello! I Am <br /><span class="c-orange">Bharath Vishnu C J</span>
-        </h1>
-        <p class="text-muted">
-          Software Engineer with 2+ years of experience building full-stack applications with Angular, .NET
-          (Web API, Windows &amp; console applications), and SQL Server. Skilled in microservices, Angular
-          micro-frontend architecture, secure communication (ECDH encryption), and cloud migration across
-          Azure and AWS.
-        </p>
-
-        <a href="#" class="link ms-4 d-none">See My Work</a>
-      </div>
-      <div class="col-10 col-md-4 d-none d-md-block">
-        <img src="images/img_frame.png" class="img-fluid" alt="Bharath Vishnu C J" />
-      </div>
-    </div>
-  </section>
-  <!-- home section ends here -->
-
-  <!-- expertise section starts -->
-  <section class="expertise mt-5" id="service">
-    <div class="heading text-center">
-      <small>My Expertise</small>
-      <h3>
-        Provide Wide Range of <br />
-        Digital Services
-      </h3>
-    </div>
-    <div class="row justify-content-evenly mt-5">
-      <div class="col-10 col-md-4" data-aos="fade-up">
-        <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="Digital-Service" />
-          </div>
-          <div class="content mt-3">
-            <h4>Full-Stack Development</h4>
-            <p class="text-muted">
-              Building production applications with Angular, .NET Core / ASP.NET Web API, TypeScript, and SQL Server.
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-10" data-aos="fade-up">
-        <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="Skills" />
-          </div>
-          <div class="content mt-3">
-            <h4>Cloud & Architecture</h4>
-            <p class="text-muted">
-              Designing microservices and Angular micro-frontend architecture, with hands-on Azure & AWS cloud migration and integration.
-            </p>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-10" data-aos="fade-up">
-        <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="Debugging" />
-          </div>
-          <div class="content mt-3">
-            <h4>Security & Real-Time Systems</h4>
-            <p class="text-muted">
-              Implementing ECDH key exchange, end-to-end payload encryption, and real-time systems using SignalR and Azure Service Bus.
-            </p>
-
-          </div>
-        </div>
+      <div class="nav-actions">
+        <!-- <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <svg class="ico ico-moon"><use href="#i-moon"/></svg>
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg>
+        </button> -->
+        <a class="btn btn-primary btn-sm nav-cta" href="./src/Bharath_Vishnu-Resume.pdf" download>
+          <svg class="ico"><use href="#i-download"/></svg>Resume
+        </a>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <svg class="ico ico-open"><use href="#i-menu"/></svg>
+          <svg class="ico ico-close"><use href="#i-x"/></svg>
+        </button>
       </div>
     </div>
-  </section>
-  <!-- expertise section ends here -->
+  </header>
 
-  <!-- skill section starts -->
-  <section class="skill mt-5 py-5" id="about">
-    <div class="row justify-content-evenly">
-      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-        <div class="row justify-content-evenly">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress html-css">
-                <span class="progress-value html-progress">90%</span>
-              </div>
-              <br />
-              <span class="text">Angular & TypeScript</span>
-            </div>
-          </div>
-          <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress javascript">
-                <span class="progress-value javascript-progress">85%</span>
-              </div>
-              <br />
-              <span class="text">.NET Core & C#</span>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-evenly mt-4">
-          <div class="col-10 col-md-6">
-            <div class="progress-card ms-3 ms-md-0">
-              <div class="circular-progress php">
-                <span class="progress-value php-progress">75%</span>
-              </div>
-              <br />
-              <span class="text">SQL Server</span>
-            </div>
-          </div>
-          <div class="col-10 col-md-6 mt-4 mt-md-0">
-            <div class="progress-card ms-3  ms-md-0">
-              <div class="circular-progress reactjs">
-                <span class="progress-value reactjs-progress">80%</span>
-              </div>
-              <br>
-              <span class="text">Azure & AWS Cloud</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-        <div class="heading mt-5 mt-md-3">
-          <small>My Skills</small>
-          <h3>Beautiful & Unique Digital Experiences</h3>
-          <p class="text-muted">
-            Experienced in creating intuitive interfaces and reliable systems with proficiency in modern technologies.
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-chip reveal"><span class="dot" aria-hidden="true"></span>Software Engineer</p>
+          <h1 class="hero-title reveal" id="hero-title" style="--d:.05s">
+            Hi, I'm <span class="grad-text">Bharath Vishnu C J</span>
+          </h1>
+          <p class="hero-typed reveal" style="--d:.1s" aria-live="off">
+            <span id="typed" data-static=".NET &amp; Angular Full Stack Developer">.NET &amp; Angular Full Stack Developer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero-lead reveal" style="--d:.15s">
+            I build secure, scalable full-stack applications with Angular, .NET and SQL Server, and I take them from
+            design through cloud deployment on Azure and AWS.
           </p>
 
-          <div class="tech-stack mb-4" style="text-align:left;">
-            <h6 class="text-muted mb-1">Languages & Frameworks</h6>
-            <span class="badge bg-secondary badge-pill">C#</span>
-            <span class="badge bg-secondary badge-pill">.NET Core</span>
-            <span class="badge bg-secondary badge-pill">ASP.NET Web API</span>
-            <span class="badge bg-secondary badge-pill">Angular</span>
-            <span class="badge bg-secondary badge-pill">TypeScript</span>
-            <span class="badge bg-secondary badge-pill">JavaScript</span>
-            <span class="badge bg-secondary badge-pill">HTML5</span>
-            <span class="badge bg-secondary badge-pill">CSS3</span>
-
-            <h6 class="text-muted mb-1 mt-3">Architecture & Security</h6>
-            <span class="badge bg-secondary badge-pill">Microservices Architecture</span>
-            <span class="badge bg-secondary badge-pill">RESTful API Design</span>
-            <span class="badge bg-secondary badge-pill">Angular Micro Frontend</span>
-            <span class="badge bg-secondary badge-pill">Module Federation</span>
-            <span class="badge bg-secondary badge-pill">ECDH Key Exchange</span>
-            <span class="badge bg-secondary badge-pill">End-to-End Encryption</span>
-            <span class="badge bg-secondary badge-pill">SonarQube</span>
-
-            <h6 class="text-muted mb-1 mt-3">Database</h6>
-            <span class="badge bg-secondary badge-pill">SQL Server</span>
-            <span class="badge bg-secondary badge-pill">T-SQL</span>
-            <span class="badge bg-secondary badge-pill">Stored Procedures</span>
-            <span class="badge bg-secondary badge-pill">Query Optimization</span>
-
-            <h6 class="text-muted mb-1 mt-3">Cloud & DevOps</h6>
-            <span class="badge bg-secondary badge-pill">Azure API Gateway</span>
-            <span class="badge bg-secondary badge-pill">Azure Redis Cache</span>
-            <span class="badge bg-secondary badge-pill">Azure Blob Storage</span>
-            <span class="badge bg-secondary badge-pill">Azure Service Bus</span>
-            <span class="badge bg-secondary badge-pill">Azure Functions</span>
-            <span class="badge bg-secondary badge-pill">Azure Data Factory</span>
-            <span class="badge bg-secondary badge-pill">AWS (API Gateway, S3)</span>
-            <span class="badge bg-secondary badge-pill">CI/CD Pipelines</span>
-            <span class="badge bg-secondary badge-pill">Windows IIS Server</span>
-
-            <h6 class="text-muted mb-1 mt-3">Real-Time, Tools & Practices</h6>
-            <span class="badge bg-secondary badge-pill">SignalR</span>
-            <span class="badge bg-secondary badge-pill">WebSockets</span>
-            <span class="badge bg-secondary badge-pill">npm / NuGet Publishing</span>
-            <span class="badge bg-secondary badge-pill">Git</span>
-            <span class="badge bg-secondary badge-pill">Postman</span>
-            <span class="badge bg-secondary badge-pill">Agile / Scrum</span>
-            <span class="badge bg-secondary badge-pill">Team Leadership & Mentoring</span>
+          <div class="hero-actions reveal" style="--d:.2s">
+            <a class="btn btn-primary" href="#projects">View my work <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-outline" href="./src/Bharath_Vishnu-Resume.pdf" download><svg class="ico"><use href="#i-download"/></svg>Download CV</a>
           </div>
 
-          <a href="./src/Bharath_Vishnu-Resume.pdf" download="Bharath_Vishnu_Resume"
-            style="text-decoration: none; color: #fff;">
-            <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
-              Download CV
-            </button>
-          </a>
-
+          <ul class="socials reveal" style="--d:.25s" aria-label="Social links">
+            <li><a href="https://linkedin.com/in/c-j-bharath" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg class="ico ico-fill"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="https://github.com/cjbharath" target="_blank" rel="me noopener" aria-label="GitHub"><svg class="ico ico-fill"><use href="#i-github"/></svg></a></li>
+            <li><a href="mailto:bharathvishnu2522003@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-mail"/></svg></a></li>
+            <li><a href="https://wa.me/919443589239" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico ico-fill"><use href="#i-whatsapp"/></svg></a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- skill section end here -->
 
-  <!-- Experience section starts here -->
-  <section class="experience py-5" id="experience">
-    <div class="heading text-center pt-5">
-      <small>Professional Journey</small>
-      <h3>Work Experience</h3>
-    </div>
-    <div class="portfolio-body">
-      <div class="row justify-content-center px-4 mt-4">
-        <div class="col-md-10 col-12" data-aos="fade-up">
-          <div class="exp-card">
-            <div class="exp-card-header">
-              <div class="exp-card-logo">
-                <img src="images/vee-healthtek-logo.png" alt="Vee Healthtek">
-              </div>
-              <div class="exp-card-meta">
-                <h4 class="exp-title">Software Engineer — .NET &amp; Angular Full Stack Developer</h4>
-                <div class="exp-sub">
-                  <span class="exp-company">Vee Healthtek</span>
-                  <span class="exp-dot">&bull;</span>
-                  <span class="exp-dates">August 2025 – Present</span>
-                </div>
-              </div>
-              <span class="exp-badge"><i class="bi bi-award-fill me-1"></i>Performance Award</span>
-            </div>
-            <ul class="exp-list">
-              <li><i class="bi bi-check-circle-fill"></i>Received a formal appreciation and performance award within the first 3 months of joining, recognizing strong technical contribution and rapid ramp-up.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Implemented ECDH (Elliptic Curve Diffie-Hellman) key exchange across 7+ application modules, resolving complex session and token edge cases including shared-key mismatches and refresh-token failures.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Designed and implemented end-to-end payload encryption between Angular and .NET using a reusable encryption helper module, later published as a shared library across multiple repositories.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Identified and remediated code-level security vulnerabilities through SonarQube audits across the Angular application, improving overall code quality and security posture.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Drove migration of the core application stack from AWS to Azure, including API Gateway, Redis Cache, Blob Storage, and Azure Functions/Data Factory pipelines.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Converted legacy SSIS Script Tasks (EDI file processing and file import) into scalable, maintainable API-based services.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Implemented Angular Micro Frontend architecture using module federation, unifying multiple remote applications into a single shell interface.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Built a centralized dynamic routing service and a reusable maintenance-page framework for micro-frontend modules.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Designed and delivered a real-time notification system end-to-end using Azure Service Bus and SignalR, with Angular UI components, backend APIs, stored procedures, and rule-engine driven triggers.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Designed and developed microservices architecture spanning Angular front-end applications and .NET Core Web APIs, improving modularity, scalability, and independent deployability of services.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Authored and published private npm and NuGet packages, enabling reusable, version-controlled components across multiple projects and reducing duplicate development effort.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Built a custom Query Viewer application (SSMS-like) enabling secure, controlled database access through a jump server.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Designed the database schema and workflow for a quality-audit system, including DPU/DPO based quality metrics, error classification, and weightage calculations.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Delivered UI/UX improvements (SlickGrid enhancements, dynamic forms, wireframes) and resolved cross-cutting production issues including session tracking, VM login, and report loading performance.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Owned end-to-end production migration and support for multiple application releases, coordinating Angular, API, and SQL deployments; managed source control via Git, contributed to CI/CD pipelines, and deployed applications on Windows IIS Server.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Handled UAT feedback cycles for multiple clients, resolving functional defects across core application modules.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Contributed to architecture and design decisions during solution design discussions; led and mentored team members on coding standards and problem-solving, and shared GitHub Copilot adoption insights in team AI-productivity sessions.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Proactively upskilled across security, cloud, architecture, and full-stack technologies within the first year to take on greater technical ownership.</li>
-            </ul>
+        <div class="hero-art reveal" style="--d:.1s">
+          <div class="portrait imgwrap">
+            <span class="fb portrait-mono">CJ</span>
+            <img decoding="async" fetchpriority="high" src="images/img_frame.webp" alt="Portrait of Bharath Vishnu C J" width="900" height="894" />
           </div>
+
+          <span aria-hidden="true" class="float-chip c1"><svg class="ico"><use href="#i-layout"/></svg>Angular</span>
+          <span aria-hidden="true" class="float-chip c2"><svg class="ico"><use href="#i-server"/></svg>.NET Core</span>
+          <span aria-hidden="true" class="float-chip c3"><svg class="ico"><use href="#i-db"/></svg>SQL Server</span>
+          <span aria-hidden="true" class="float-chip c4"><svg class="ico"><use href="#i-cloud"/></svg>Azure & AWS</span>
+
+          <div aria-hidden="true" class="float-card f1"><strong style="color: #635cf5;">2.5+ years</strong><span>Professional experience</span></div>
+          <!-- <div aria-hidden="true" class="float-card f2"><svg class="ico"><use href="#i-award"/></svg><span>Performance award in 3 months</span></div> -->
         </div>
       </div>
-      <div class="row justify-content-center px-4 mt-4">
-        <div class="col-md-10 col-12" data-aos="fade-up">
-          <div class="exp-card exp-card-alt">
-            <div class="exp-card-header">
-              <div class="exp-card-logo">
-                <img src="images/oneyes_logo_square.png" alt="Oneyes Infotech Solutions">
-              </div>
-              <div class="exp-card-meta">
-                <h4 class="exp-title">Software Developer - Full Stack Developer</h4>
-                <div class="exp-sub">
-                  <span class="exp-company">Oneyes Infotech Solutions</span>
-                  <span class="exp-dot">&bull;</span>
-                  <span class="exp-dates">October 2023 – March 2025</span>
-                </div>
-              </div>
-            </div>
-            <ul class="exp-list">
-              <li><i class="bi bi-check-circle-fill"></i>Developed and tested full-stack web application features, gaining hands-on exposure to real-world software development lifecycle and Agile practices.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Collaborated with senior developers on debugging, deployment, and quality assurance of application modules.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Designed, developed, and maintained software applications, contributing to application enhancements and new feature implementation.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Worked on an <strong>Learning Management System (LMS)</strong> project, contributing to application development, feature implementation, database management, and troubleshooting.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Contributed to the development of a <strong>Job Portal</strong> project, implementing application features, API integration, database operations, and resolving technical issues.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Performed <strong>automation testing using Selenium</strong> and developed test cases to validate application functionality, identify defects, and ensure software quality.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Performed coding, debugging, and troubleshooting to identify and resolve technical issues and improve application reliability.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Participated in code reviews and collaborated with cross-functional teams to ensure maintainable and high-quality software solutions.</li>
-              <li><i class="bi bi-check-circle-fill"></i>Maintained technical documentation and contributed to ensuring the quality, performance, and stability of software applications.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Experience section ends here -->
 
-  <!-- portfolio section starts here -->
-  <section class="portfolio" id="portfolio">
-    <div class="heading text-center pt-5">
-      <small>Creative Work</small>
-      <h3>Check My Portfolio</h3>
-    </div>
-
-    <!-- <div id="myBtnContainer" class="text-center mt-4">
-        <button class="filter-item" data-filter="all">All</button>
-        <button class="filter-item" data-filter="arvr">AR/VR</button>
-        <button class="filter-item" data-filter="webapp">Web App</button>
-        <button class="filter-item" data-filter="android">Android</button>
-        <button class="filter-item" data-filter="design">Design</button>
+      <!-- <div class="container">
+        <ul class="stats reveal" aria-label="Highlights">
+          <li><strong><span class="count" data-to="2">0</span>+</strong><span>Years of experience</span></li>
+          <li><strong><span class="count" data-to="3">0</span></strong><span>Months to a performance award</span></li>
+          <li><strong><span class="count" data-to="2">0</span></strong><span>Cloud platforms, Azure and AWS</span></li>
+          <li><strong><span class="count" data-to="4">0</span></strong><span>Awards and prizes</span></li>
+        </ul>
       </div> -->
-    <div class="portfolio-body">
-      <div class="row justify-content-evenly px-4">
-        <div class="post col-md-4 arvr all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/apa.jpg" class="card-img-top" alt="AR/VR Game" />
-            <div class="card-body text-center">
-              <h4 class="card-title">AADU PULI AATAM Game in AR/VR</h4>
-              <span class="badge bg-secondary badge-pill">Unity</span>
-              <span class="badge bg-secondary badge-pill">AR/VR</span>
-              <br />
-              <a href="https://drive.google.com/file/d/1C03tSmPaB6G5xzzzqguSM08hn2Ijej0y/view?usp=sharing"
-                class="link">View Project</a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill"><svg class="ico"><use href="#i-code"/></svg>About me</span>
+          <h2 id="about-title">Engineer who cares about the whole stack</h2>
+          <p>From the Angular screen to the SQL Server row, and everything that happens to the data in between.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a software engineer with 2.5+ years of experience , Currently working at Vee Healthtek, building full-stack applications with
+              Angular and .NET (Web API, Windows and console applications) on top of SQL Server, where schema design,
+              query optimization and stored procedures are my core strength.
+            </p>
+            <p>
+              I design microservices and Angular micro-frontend architecture, secure communication with ECDH key exchange and
+              end-to-end payload encryption, and drive cloud migration and integration across Azure and AWS (API Gateway, Redis Cache, Blob Storage, Service Bus,
+              Azure Functions, Data Factory). I've built real-time systems with SignalR, published private npm and NuGet packages, and led and mentored developers on my team.
+            </p>
+            <p>
+              I was recognized with a performance award within my first 3 months, and I pick up new technologies quickly to
+              deliver secure, scalable, production-ready solutions.
+            </p>
+          </div>
+
+          <aside class="info-card reveal" style="--d:.1s" aria-label="Quick facts">
+            <h3>Quick facts</h3>
+            <dl>
+              <div><dt><svg class="ico"><use href="#i-brief"/></svg>Current role</dt><dd>Software Engineer, Vee Healthtek</dd></div>
+              <div><dt><svg class="ico"><use href="#i-pin"/></svg>Location</dt><dd>Salem, Tamil Nadu, India</dd></div>
+              <div><dt><svg class="ico"><use href="#i-cap"/></svg>Education</dt><dd>B.E. Computer Science and Engineering, 2020 to 2024 (CGPA 8.22)</dd></div>
+              <div><dt><svg class="ico"><use href="#i-mail"/></svg>Email</dt><dd><a href="mailto:bharathvishnu2522003@gmail.com">bharathvishnu2522003@gmail.com</a></dd></div>
+              <div><dt><svg class="ico"><use href="#i-phone"/></svg>Phone</dt><dd><a href="tel:+919443589239">+91 94435 89239</a></dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <h3 class="subhead reveal">What I do</h3>
+        <div class="expertise">
+          <article class="expertise-card reveal">
+            <span class="expertise-ico imgwrap"><img decoding="async" width="61" height="61" loading="lazy" src="images/service-icon2.png" alt="" /><span class="fb"><svg class="ico"><use href="#i-layout"/></svg></span></span>
+            <h3>UI and UX</h3>
+            <p>Wireframes, SlickGrid enhancements and dynamic forms that make data-heavy screens easier to use.</p>
+          </article>
+          <article class="expertise-card reveal" style="--d:.05s">
+            <span class="expertise-ico imgwrap"><img decoding="async" width="63" height="63" loading="lazy" src="images/service-icon3.png" alt="" /><span class="fb"><svg class="ico"><use href="#i-code"/></svg></span></span>
+            <h3>Full-stack development</h3>
+            <p>Angular, .NET Core and SQL Server applications, built end to end and deployed on Azure.</p>
+          </article>
+          <article class="expertise-card reveal" style="--d:.1s">
+            <span class="expertise-ico imgwrap"><img decoding="async" width="62" height="62" loading="lazy" src="images/service-icon4.png" alt="" /><span class="fb"><svg class="ico"><use href="#i-pen"/></svg></span></span>
+            <h3>Architecture and design</h3>
+            <p>Microservices, micro-frontends and database schema design, from solution discussions to delivery.</p>
+          </article>
+          <article class="expertise-card reveal" style="--d:.15s">
+            <span class="expertise-ico imgwrap"><img decoding="async" width="66" height="65" loading="lazy" src="images/service-icon1.png" alt="" /><span class="fb"><svg class="ico"><use href="#i-shield"/></svg></span></span>
+            <h3>Mentoring and support</h3>
+            <p>Leading and mentoring teammates on coding standards and problem-solving, and resolving production issues.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills: the stack, layer by layer -->
+    <section class="section section-alt layers" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill"><svg class="ico"><use href="#i-wrench"/></svg>Skills</span>
+          <h2 id="skills-title">The stack, layer by layer</h2>
+          <p>A request in one of my applications travels through all five layers. Pick one to see what I use there.</p>
+        </header>
+
+        <div class="stack-grid">
+          <div class="layer-list reveal" role="tablist" aria-label="Stack layers" aria-orientation="vertical">
+            <button class="layer-btn" role="tab" id="lt-0" aria-controls="lp-0" aria-selected="true" type="button" data-i="4" style="--c:var(--l-ui)">
+              <span class="skill-ico g2"><svg class="ico"><use href="#i-layout"/></svg></span>
+              <span class="layer-name"><b>Interface</b><small>Angular and micro-frontends</small></span>
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </button>
+            <button class="layer-btn" role="tab" id="lt-1" aria-controls="lp-1" aria-selected="false" tabindex="-1" type="button" data-i="3" style="--c:var(--l-sec)">
+              <span class="skill-ico g5"><svg class="ico"><use href="#i-shield"/></svg></span>
+              <span class="layer-name"><b>Security</b><small>ECDH and payload encryption</small></span>
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </button>
+            <button class="layer-btn" role="tab" id="lt-2" aria-controls="lp-2" aria-selected="false" tabindex="-1" type="button" data-i="2" style="--c:var(--l-svc)">
+              <span class="skill-ico g1"><svg class="ico"><use href="#i-server"/></svg></span>
+              <span class="layer-name"><b>Services</b><small>.NET Core, APIs and real-time</small></span>
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </button>
+            <button class="layer-btn" role="tab" id="lt-3" aria-controls="lp-3" aria-selected="false" tabindex="-1" type="button" data-i="1" style="--c:var(--l-data)">
+              <span class="skill-ico g3"><svg class="ico"><use href="#i-db"/></svg></span>
+              <span class="layer-name"><b>Data</b><small>SQL Server, my core strength</small></span>
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </button>
+            <button class="layer-btn" role="tab" id="lt-4" aria-controls="lp-4" aria-selected="false" tabindex="-1" type="button" data-i="0" style="--c:var(--l-cloud)">
+              <span class="skill-ico g6"><svg class="ico"><use href="#i-cloud"/></svg></span>
+              <span class="layer-name"><b>Cloud and delivery</b><small>Azure, AWS and releases</small></span>
+              <svg class="ico"><use href="#i-arrow"/></svg>
+            </button>
+          </div>
+
+          <div class="stack-scene reveal" aria-hidden="true">
+            <div class="iso">
+              <div class="slab" data-i="0" style="--c:var(--l-cloud)"><span>Cloud and delivery</span></div>
+              <div class="slab" data-i="1" style="--c:var(--l-data)"><span>Data</span></div>
+              <div class="slab" data-i="2" style="--c:var(--l-svc)"><span>Services</span></div>
+              <div class="slab" data-i="3" style="--c:var(--l-sec)"><span>Security</span></div>
+              <div class="slab" data-i="4" style="--c:var(--l-ui)"><span>Interface</span></div>
             </div>
           </div>
         </div>
-        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/ilearn.png" class="card-img-top" alt="Learning Management System" />
-            <div class="card-body text-center">
-              <h4 class="card-title">Learning Management System</h4>
-              <span class="badge bg-secondary badge-pill">Full Stack</span>
-              <span class="badge bg-secondary badge-pill">Web Application</span>
-              <br />
-              <a href="https://drive.google.com/file/d/1NdqwfZvE1sSPQ8osK35zsKSBf94xXTDD/view?usp=sharing"
-                class="read-more-btn link">View Project</a>
+
+        <div class="layer-panels reveal">
+          <div class="layer-panel" role="tabpanel" id="lp-0" aria-labelledby="lt-0" tabindex="0" style="--c:var(--l-ui)">
+            <div><h3>Interface</h3><p>Single-page apps and micro-frontends. I unified several remote applications into one shell with Module Federation and a central dynamic routing service.</p></div>
+            <ul class="tags"><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Module Federation</li><li>Shell integration</li><li>Dynamic routing</li><li>SlickGrid</li><li>Dynamic forms</li><li>Web applications</li></ul>
+          </div>
+          <div class="layer-panel" role="tabpanel" id="lp-1" aria-labelledby="lt-1" tabindex="0" style="--c:var(--l-sec)" hidden>
+            <div><h3>Security</h3><p>ECDH key exchange between Angular and .NET, the same public-key agreement method behind WhatsApp's Signal Protocol, encrypting the full application payload end to end. Session keys regenerate automatically, and SonarQube audits keep the code secure.</p></div>
+            <ul class="tags"><li>ECDH key exchange</li><li>End-to-end payload encryption</li><li>Session key regeneration</li><li>SonarQube vulnerability remediation</li></ul>
+          </div>
+          <div class="layer-panel" role="tabpanel" id="lp-2" aria-labelledby="lt-2" tabindex="0" style="--c:var(--l-svc)" hidden>
+            <div><h3>Services</h3><p>Web APIs, microservices, Windows and console applications, and real-time features over SignalR. Reusable code ships as private npm and NuGet packages.</p></div>
+            <ul class="tags"><li>C#</li><li>.NET Core</li><li>ASP.NET Web API</li><li>Microservices</li><li>RESTful API design</li><li>Windows applications</li><li>Console applications</li><li>SignalR</li><li>WebSockets</li><li>Networking concepts</li><li>Private npm packages</li><li>Private NuGet packages</li></ul>
+          </div>
+          <div class="layer-panel" role="tabpanel" id="lp-3" aria-labelledby="lt-3" tabindex="0" style="--c:var(--l-data)" hidden>
+            <div><h3>Data <span class="star">Core strength</span></h3><p>SQL Server is my core strength: schema and database design, stored procedures, views, indexing and query optimization.</p></div>
+            <ul class="tags"><li>SQL Server</li><li>T-SQL</li><li>Stored procedures</li><li>Views</li><li>Functions</li><li>Indexing</li><li>Query optimization</li><li>Schema and database design</li></ul>
+          </div>
+          <div class="layer-panel" role="tabpanel" id="lp-4" aria-labelledby="lt-4" tabindex="0" style="--c:var(--l-cloud)" hidden>
+            <div><h3>Cloud and delivery</h3><p>I drove the migration of a core application stack from AWS to Azure, and I own releases end to end across Angular, API and SQL deployments.</p></div>
+            <ul class="tags"><li>Azure API Gateway</li><li>Redis Cache</li><li>Blob Storage</li><li>Service Bus</li><li>Azure Functions</li><li>Azure Data Factory</li><li>Container Jobs</li><li>AWS API Gateway</li><li>AWS S3</li><li>CI/CD pipelines</li><li>Windows IIS hosting</li><li>Git</li><li>Postman</li><li>Visual Studio</li><li>VS Code</li><li>Agile and Scrum</li><li>Code reviews</li><li>Mentoring</li></ul>
+          </div>
+        </div>
+
+        <header class="section-head tech-head reveal">
+          <span class="pill"><svg class="ico"><use href="#i-code"/></svg>Core technical skills</span>
+          <h2 id="tech-title">Technologies I work with</h2>
+          <p>The tools I use every day to design, build, secure and ship applications.</p>
+        </header>
+
+        <div class="skill-grid" role="group" aria-labelledby="tech-title">
+          <article class="skill-card reveal">
+            <span class="skill-ico g1"><svg class="ico"><use href="#i-code"/></svg></span>
+            <h3>Languages and frameworks</h3>
+            <ul class="tags"><li>.NET Core</li><li>ASP.NET Web API</li><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>C#</li><li>HTML5</li><li>CSS3</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:.06s">
+            <span class="skill-ico g4"><svg class="ico"><use href="#i-layers"/></svg></span>
+            <h3>Architecture</h3>
+            <ul class="tags"><li>Microservices architecture</li><li>RESTful API design</li><li>Angular micro-frontend</li><li>Module Federation</li><li>Shell integration</li><li>Dynamic routing</li><li>System and solution architecture design</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:.12s">
+            <span class="skill-ico g5"><svg class="ico"><use href="#i-shield"/></svg></span>
+            <h3>Security and encryption</h3>
+            <ul class="tags"><li>ECDH key exchange</li><li>End-to-end payload encryption</li><li>SonarQube vulnerability remediation</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-ico g2"><svg class="ico"><use href="#i-layout"/></svg></span>
+            <h3>Application types</h3>
+            <ul class="tags"><li>Windows applications</li><li>Console applications</li><li>Web applications</li></ul>
+          </article>
+          <article class="skill-card skill-card-star reveal" style="--d:.06s">
+            <span class="skill-ico g3"><svg class="ico"><use href="#i-db"/></svg></span>
+            <h3>Database <span class="star">Core strength</span></h3>
+            <ul class="tags"><li>SQL Server</li><li>T-SQL</li><li>Stored procedures</li><li>Views</li><li>Functions</li><li>Indexing</li><li>Query optimization</li><li>Schema and database design</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:.12s">
+            <span class="skill-ico g6"><svg class="ico"><use href="#i-cloud"/></svg></span>
+            <h3>Cloud (Azure and AWS)</h3>
+            <ul class="tags"><li>Azure API Gateway</li><li>Redis Cache</li><li>Blob Storage</li><li>Service Bus (messaging queues)</li><li>Azure Functions</li><li>Azure Data Factory</li><li>Container Jobs</li><li>AWS API Gateway</li><li>AWS S3</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-ico g1"><svg class="ico"><use href="#i-zap"/></svg></span>
+            <h3>Real-time and networking</h3>
+            <ul class="tags"><li>SignalR</li><li>WebSockets</li><li>Networking concepts</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:.06s">
+            <span class="skill-ico g4"><svg class="ico"><use href="#i-package"/></svg></span>
+            <h3>Package management</h3>
+            <ul class="tags"><li>Private npm package publishing</li><li>Private NuGet package publishing</li></ul>
+          </article>
+          <article class="skill-card reveal" style="--d:.12s">
+            <span class="skill-ico g2"><svg class="ico"><use href="#i-wrench"/></svg></span>
+            <h3>Tools and practices</h3>
+            <ul class="tags"><li>Git</li><li>CI/CD pipelines</li><li>Windows IIS hosting and deployment</li><li>Visual Studio</li><li>VS Code</li><li>Postman</li><li>Agile/Scrum</li><li>Code reviews</li><li>Team leadership and mentoring</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects: systems I've designed and built, then personal and academic projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill"><svg class="ico"><use href="#i-layers"/></svg>Projects</span>
+          <h2 id="projects-title">Systems I've designed and built</h2>
+          <p>Production work from Vee Healthtek and OneYes Infotech Solutions. Each card shows how the data moves or what I worked on.</p>
+        </header>
+
+        <div class="systems" id="systems">
+          <article class="system" style="--i:0">
+            <div class="system-text">
+              <span class="system-idx" aria-hidden="true">01</span>
+              <span class="pill">Vee Healthtek</span>
+              <h3>Real-time notification system</h3>
+              <p>Delivered end to end: Angular UI components, backend APIs, stored procedures and rule-engine driven triggers, pushed live over Azure Service Bus and SignalR.</p>
+              <ul class="tags"><li>Azure Service Bus</li><li>SignalR</li><li>Angular</li><li>.NET</li></ul>
             </div>
-          </div>
-        </div>
-        <div class="post col-md-4 android all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/ocean_guard.png" class="card-img-top" alt="Ocean Guard App" />
-            <div class="card-body text-center">
-              <h4 class="card-title">Ocean Guard App</h4>
-              <span class="badge bg-secondary badge-pill">Android</span>
-              <span class="badge bg-secondary badge-pill">Maritime Safety</span>
-              <br />
-              <a href="https://drive.google.com/file/d/1ZM11QySXdAXrCU5p0IcAtStq1tsaLlUp/view?usp=sharing"
-                class="read-more-btn link">View Project</a>
+            <div class="system-vis">
+              <ol class="pipe" data-n="4" aria-label="How the data moves"><li class="node"><i class="node-ico g5"><svg class="ico"><use href="#i-zap"/></svg></i><span>Rule-driven trigger</span></li><li class="node"><i class="node-ico g4"><svg class="ico"><use href="#i-layers"/></svg></i><span>Azure Service Bus</span></li><li class="node"><i class="node-ico g1"><svg class="ico"><use href="#i-server"/></svg></i><span>SignalR</span></li><li class="node"><i class="node-ico g2"><svg class="ico"><use href="#i-layout"/></svg></i><span>Angular UI</span></li></ol>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-evenly mt-4 px-4">
-        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/pixel_perfection.png" class="card-img-top" alt="Pixel Perfection" />
-            <div class="card-body text-center">
-              <h4 class="card-title">Pixel Perfection</h4>
-              <span class="badge bg-secondary badge-pill">Python</span>
-              <span class="badge bg-secondary badge-pill">Image Editing</span>
-              <br />
-              <a href="https://drive.google.com/file/d/1PM0WQVREuLwH0jGbMEReT-cbAjGkh-yf/view?usp=sharing"
-                class="read-more-btn link">View Project</a>
+          </article>
+          <article class="system" style="--i:1">
+            <div class="system-text">
+              <span class="system-idx" aria-hidden="true">02</span>
+              <span class="pill">Vee Healthtek</span>
+              <h3>Encrypted payload library</h3>
+              <p>ECDH key exchange between the Angular front-end and .NET Web API, the same method WhatsApp's Signal Protocol uses, encrypting the full application payload end to end through a reusable helper module that was later published as a shared library.</p>
+              <ul class="tags"><li>ECDH</li><li>Encryption</li><li>Angular</li><li>.NET</li></ul>
             </div>
-          </div>
-        </div>
-        <div class="post col-md-4 design all col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/tot.png" class="card-img-top" alt="Figma Design" />
-            <div class="card-body text-center">
-              <h4 class="card-title">Travel on Time</h4>
-              <span class="badge bg-secondary badge-pill">Figma</span>
-              <span class="badge bg-secondary badge-pill">Bus Tracking</span>
-              <br />
-              <a href="https://www.figma.com/proto/kBOyivAoG0O4mG1HxyBg0D/TOT?node-id=9-52&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=20%3A19"
-                class="read-more-btn link">View Project</a>
+            <div class="system-vis">
+              <ol class="pipe" data-n="4" aria-label="How the data moves"><li class="node"><i class="node-ico g2"><svg class="ico"><use href="#i-layout"/></svg></i><span>Angular app</span></li><li class="node"><i class="node-ico g5"><svg class="ico"><use href="#i-shield"/></svg></i><span>ECDH key exchange</span></li><li class="node"><i class="node-ico g3"><svg class="ico"><use href="#i-package"/></svg></i><span>Encrypted payload</span></li><li class="node"><i class="node-ico g1"><svg class="ico"><use href="#i-server"/></svg></i><span>.NET Web API</span></li></ol>
             </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    </div>
-  </section>
-  <!-- portfolio section ends here -->
-
-  <!-- Achievements section starts here -->
-  <div class="heading text-center pt-5" id="Achievements">
-    <div class="row justify-content-evenly mt-4 px-4">
-      <div class="post col-md-9 col-10 mt-3 mt-md-0" data-aos="fade-up">
-        <div class="card">
-          <h3>Check My Achievements</h3>
-
-          <img src="images/nm.png" class="card-img-top" alt="Ocean Guard Publication " />
-          <div class="card-body text-center">
-            <h4 class="card-title" style="margin-top: 3%;">Regional Level Second Prize winner in METAVERSE CHALLENGE
-              2022</h4>
-            <h6>TN Naan Mudhalvan AR/VR Development honoured by Thiru. Udhayanidhi Stalin, Hon’ble Minister for Youth
-              and Sports Development and Special Programmes and Tmt. J.Innocent Divya , IAS</h6>
-            <span class="badge bg-secondary badge-pill">Android</span>
-            <span class="badge bg-secondary badge-pill">Game</span>
-            <span class="badge bg-secondary badge-pill">3D</span>
-            <span class="badge bg-secondary badge-pill">AR/VR</span>
-            <span class="badge bg-secondary badge-pill">TN Naan Mudhalvan</span>
-            <span class="badge bg-secondary badge-pill">Runner Up</span>
-            <br />
-            <a href="https://www.youtube.com/watch?v=G4sroP-V_V8" target="_blank" class="read-more-btn link">View Full
-              Event</a>
-          </div>
-        </div>
-      </div>
-      <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
-        <div class="card">
-
-          <img src="images/coding.jpg" class="card-img-top" alt="Ocean Guard Publication " />
-          <div class="card-body text-center">
-            <h4 class="card-title" style="margin-top: 3%;">First prize in Coding Contest (National Level Fest 2021)</h4>
-            <h6>Organized by Kongunadu College of Engineering and Technology (Autonomous)</h6>
-            <span class="badge bg-secondary badge-pill">Coding</span>
-            <span class="badge bg-secondary badge-pill">C</span>
-            <span class="badge bg-secondary badge-pill">Python</span>
-            <span class="badge bg-secondary badge-pill">First Prize</span>
-            <br />
-          </div>
-        </div>
-      </div>
-      <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
-        <div class="card">
-          <img src="images/pitchperfect.JPG" class="card-img-top" alt="Ocean Guard Publication " />
-          <div class="card-body text-center">
-            <h4 class="card-title" style="margin-top: 3%;">First Prize in Pitch Perfect'22 Sponsored by IEEE</h4>
-            <h6>Organized by Knowledge Institute of Technology</h6>
-            <span class="badge bg-secondary badge-pill">Pitch Project</span>
-            <span class="badge bg-secondary badge-pill">Prototype</span>
-            <span class="badge bg-secondary badge-pill">Flood Rescue</span>
-            <span class="badge bg-secondary badge-pill">Chat bot</span>
-            <br />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Achievements section ends here -->
-
-
-  <!-- Internships section starts here -->
-  <section class="Internships" id="Internships">
-    <div class="heading text-center pt-5" id="Internships">
-      <h3>Internships</h3>
-    </div>
-    <div class="portfolio-body">
-      <div class="row justify-content-evenly px-4">
-        <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/google-internship.jpg" class="card-img-top" alt="AR/VR Game" />
-            <div class="card-body text-center">
-              <h4 class="card-title">Google Supported Virtual Internship Program</h4>
-              <h6>"Android Basics in Kotlin" Organized by SmartInternz in collaboration with AICTE</h6>
-
-              <span class="badge bg-secondary badge-pill">Android</span>
-              <span class="badge bg-secondary badge-pill">Kotlin</span>
-              <span class="badge bg-secondary badge-pill">Google</span>
-              <span class="badge bg-secondary badge-pill">AICTE</span>
-
+          </article>
+          <article class="system" style="--i:2">
+            <div class="system-text">
+              <span class="system-idx" aria-hidden="true">03</span>
+              <span class="pill">Vee Healthtek</span>
+              <h3>Micro-frontend shell</h3>
+              <p>Unified several remote Angular applications into one shell with Module Federation, a central dynamic routing service and a reusable maintenance-page framework.</p>
+              <ul class="tags"><li>Module Federation</li><li>Angular</li><li>Dynamic routing</li></ul>
             </div>
-          </div>
-        </div>
-        <div class="post col-md-4 col-10 mt-3 mt-md-0" data-aos="fade-up">
-          <div class="card">
-            <img src="images/cisco.jpg" class="card-img-top" alt="Learning Management System" />
-            <div class="card-body text-center">
-              <h4 class="card-title">CISCO AICTE Virtual Internship Program 2022</h4>
-              <h6>"Networks" Organized by CISCO Networking Academy with AICTE</h6>
-              <span class="badge bg-secondary badge-pill">Cisco</span>
-              <span class="badge bg-secondary badge-pill">Networks</span>
-              <span class="badge bg-secondary badge-pill">AICTE</span>
-              <br />
+            <div class="system-vis">
+              <ol class="pipe" data-n="3" aria-label="How the data moves"><li class="node"><i class="node-ico g2"><svg class="ico"><use href="#i-layout"/></svg></i><span>Shell application</span></li><li class="node"><i class="node-ico g1"><svg class="ico"><use href="#i-code"/></svg></i><span>Dynamic routing service</span></li><li class="node"><i class="node-ico g3"><svg class="ico"><use href="#i-package"/></svg></i><span>Remote modules</span></li></ol>
             </div>
+          </article>
+          <!-- <article class="system" style="--i:3">
+            <div class="system-text">
+              <span class="system-idx" aria-hidden="true">04</span>
+              <span class="pill">Vee Healthtek</span>
+              <h3>AWS to Azure migration</h3>
+              <p>Drove migration of a core application stack to Azure, and converted legacy SSIS Script Tasks for EDI file processing and import into scalable API-based services.</p>
+              <ul class="tags"><li>Azure</li><li>API Gateway</li><li>Redis</li><li>Functions</li><li>Data Factory</li></ul>
+            </div>
+            <div class="system-vis">
+              <ol class="pipe" data-n="4" aria-label="How the data moves"><li class="node"><i class="node-ico g5"><svg class="ico"><use href="#i-cloud"/></svg></i><span>AWS stack</span></li><li class="node"><i class="node-ico g4"><svg class="ico"><use href="#i-server"/></svg></i><span>Azure API Gateway</span></li><li class="node"><i class="node-ico g3"><svg class="ico"><use href="#i-db"/></svg></i><span>Redis Cache and Blob Storage</span></li><li class="node"><i class="node-ico g6"><svg class="ico"><use href="#i-zap"/></svg></i><span>Functions and Data Factory</span></li></ol>
+            </div>
+          </article> -->
+          <article class="system" style="--i:3">
+            <div class="system-text">
+              <span class="system-idx" aria-hidden="true">04</span>
+              <span class="pill">OneYes Infotech Solutions</span>
+              <h3>Learning Management System</h3>
+              <p>Worked on the LMS at OneYes Infotech Solutions, contributing to application development, feature implementation, database management and troubleshooting.</p>
+              <ul class="tags"><li>Full stack</li><li>Database management</li><li>Troubleshooting</li></ul>
+            </div>
+            <div class="system-vis">
+              <ol class="pipe still" data-n="4" aria-label="What I worked on"><li class="node"><i class="node-ico g1"><svg class="ico"><use href="#i-code"/></svg></i><span>Application development</span></li><li class="node"><i class="node-ico g4"><svg class="ico"><use href="#i-layers"/></svg></i><span>Feature implementation</span></li><li class="node"><i class="node-ico g3"><svg class="ico"><use href="#i-db"/></svg></i><span>Database management</span></li><li class="node"><i class="node-ico g5"><svg class="ico"><use href="#i-search"/></svg></i><span>Troubleshooting</span></li></ol>
+            </div>
+          </article>
+          <article class="system" style="--i:4">
+            <div class="system-text">
+              <span class="system-idx" aria-hidden="true">05</span>
+              <span class="pill">OneYes Infotech Solutions</span>
+              <h3>Job Portal</h3>
+              <p>Contributed to the Job Portal at OneYes Infotech Solutions, implementing application features, API integration and database operations, and resolving technical issues.</p>
+              <ul class="tags"><li>Application features</li><li>API integration</li><li>Database operations</li></ul>
+            </div>
+            <div class="system-vis">
+              <ol class="pipe still" data-n="4" aria-label="What I worked on"><li class="node"><i class="node-ico g2"><svg class="ico"><use href="#i-layout"/></svg></i><span>Application features</span></li><li class="node"><i class="node-ico g1"><svg class="ico"><use href="#i-server"/></svg></i><span>API integration</span></li><li class="node"><i class="node-ico g3"><svg class="ico"><use href="#i-db"/></svg></i><span>Database operations</span></li><li class="node"><i class="node-ico g5"><svg class="ico"><use href="#i-search"/></svg></i><span>Issue resolution</span></li></ol>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subhead reveal">Personal and academic projects</h3>
+        <div class="mosaic">
+          <article class="tile tile-1 reveal">
+            <button class="tile-media zoomable imgwrap g2" type="button" data-caption="Learning Management System" aria-label="Enlarge image: Learning Management System">
+              <span class="fb"><svg class="ico"><use href="#i-book"/></svg></span>
+              <img decoding="async" width="1440" height="810" loading="lazy" src="images/ilearn.webp" alt="Learning Management System home page" />
+            </button>
+            <div class="tile-body">
+              <span class="tile-badge">Full stack</span>
+              <h3>Learning Management System</h3>
+              <p>Full-stack web application for course creation, content delivery and progress tracking.</p>
+              <a class="card-link" href="https://drive.google.com/file/d/1NdqwfZvE1sSPQ8osK35zsKSBf94xXTDD/view?usp=sharing" target="_blank" rel="noopener">View project <svg class="ico"><use href="#i-external"/></svg></a>
+            </div>
+          </article>
+          <article class="tile tile-2 reveal" style="--d:.06s">
+            <button class="tile-media zoomable imgwrap g4" type="button" data-caption="Ocean Guard" aria-label="Enlarge image: Ocean Guard">
+              <span class="fb"><svg class="ico"><use href="#i-phone-app"/></svg></span>
+              <img decoding="async" width="1280" height="720" loading="lazy" src="images/ocean_guard.webp" alt="Fisherman checking the Ocean Guard maritime safety app" />
+            </button>
+            <div class="tile-body">
+              <span class="tile-badge">Android and research</span>
+              <h3>Ocean Guard</h3>
+              <p>Deep-sea fishermen monitoring and maritime safety Android application, published as a research paper in JETIR.</p>
+              <a class="card-link" href="https://www.jetir.org/view?paper=JETIR2403A78" target="_blank" rel="noopener">Read the paper <svg class="ico"><use href="#i-external"/></svg></a>
+            </div>
+          </article>
+          <article class="tile reveal">
+            <button class="tile-media zoomable imgwrap g5" type="button" data-caption="AADU PULI AATAM" aria-label="Enlarge image: AADU PULI AATAM">
+              <span class="fb"><svg class="ico"><use href="#i-gamepad"/></svg></span>
+              <img decoding="async" width="876" height="494" loading="lazy" src="images/apa.webp" alt="AADU PULI AATAM game menu with goats and tigers" />
+            </button>
+            <div class="tile-body">
+              <span class="tile-badge">Unity and AR/VR</span>
+              <h3>AADU PULI AATAM</h3>
+              <p>An AR/VR game built in Unity.</p>
+              <a class="card-link" href="https://drive.google.com/file/d/1C03tSmPaB6G5xzzzqguSM08hn2Ijej0y/view?usp=sharing" target="_blank" rel="noopener">View project <svg class="ico"><use href="#i-external"/></svg></a>
+            </div>
+          </article>
+          <article class="tile reveal" style="--d:.06s">
+            <button class="tile-media zoomable imgwrap g3" type="button" data-caption="Pixel Perfection" aria-label="Enlarge image: Pixel Perfection">
+              <span class="fb"><svg class="ico"><use href="#i-image"/></svg></span>
+              <img decoding="async" width="570" height="320" loading="lazy" src="images/pixel_perfection.webp" alt="Pixel Perfection image editing platform" />
+            </button>
+            <div class="tile-body">
+              <span class="tile-badge">Python and Flask</span>
+              <h3>Pixel Perfection</h3>
+              <p>Image editing platform built with Python, Flask, IBM DB and Docker.</p>
+              <a class="card-link" href="https://drive.google.com/file/d/1PM0WQVREuLwH0jGbMEReT-cbAjGkh-yf/view?usp=sharing" target="_blank" rel="noopener">View project <svg class="ico"><use href="#i-external"/></svg></a>
+            </div>
+          </article>
+          <article class="tile reveal" style="--d:.12s">
+            <button class="tile-media zoomable imgwrap g1" type="button" data-caption="Travel on Time" aria-label="Enlarge image: Travel on Time">
+              <span class="fb"><svg class="ico"><use href="#i-pen"/></svg></span>
+              <img decoding="async" width="1440" height="810" loading="lazy" src="images/tot.webp" alt="Travel on Time bus tracking app prototype" />
+            </button>
+            <div class="tile-body">
+              <span class="tile-badge">Figma prototype</span>
+              <h3>Travel on Time</h3>
+              <p>Bus tracking app, designed and prototyped in Figma.</p>
+              <a class="card-link" href="https://www.figma.com/proto/kBOyivAoG0O4mG1HxyBg0D/TOT?node-id=9-52&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=20%3A19" target="_blank" rel="noopener">Open prototype <svg class="ico"><use href="#i-external"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill"><svg class="ico"><use href="#i-brief"/></svg>Experience</span>
+          <h2 id="exp-title">Where I've worked</h2>
+          <!-- <p>Two roles so far: Software Developer at OneYes Infotech Solutions, then Software Engineer at Vee Healthtek, owning releases and mentoring a team.</p> -->
+        </header>
+
+        <div class="timeline">
+          <article class="job reveal">
+            <span class="job-dot current" aria-hidden="true"></span>
+            <div class="job-card">
+              <div class="job-head">
+                <span class="job-logo imgwrap"><img decoding="async" width="360" height="360" loading="lazy" src="images/vee-healthtek-logo.png" alt="Vee Healthtek logo" /><span class="fb" aria-hidden="true">VH</span></span>
+                <div class="job-meta">
+                  <h3>Software Engineer</h3>
+                  <p><strong>Vee Healthtek</strong></p>
+                </div>
+                <span class="job-date">Aug 2025 to present</span>
+              </div>
+
+              <p class="job-award"><svg class="ico"><use href="#i-award"/></svg><span><b>Performance award.</b> Received a formal appreciation and performance award within the first 3 months of joining, recognizing strong technical contribution and rapid ramp-up.</span></p>
+
+              <ul class="check-list" id="highlights" data-collapsed="true">
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Implemented ECDH (Elliptic Curve Diffie-Hellman) key exchange across the Angular front-end and .NET Web API, the same public-key agreement method used in WhatsApp's Signal Protocol (via Curve25519) for end-to-end encryption, encrypting the full application payload end to end and automatically regenerating session keys whenever a new session is created or refreshed. Resolved complex session and token edge cases including shared-key mismatches and refresh-token failures, and optimized the encryption/decryption pipeline to eliminate perceptible performance overhead.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Designed and implemented end-to-end payload encryption between Angular and .NET using a reusable encryption helper module, later published as a shared library across multiple repositories.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Identified and remediated code-level security vulnerabilities through SonarQube audits across the Angular application, improving overall code quality and security posture.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Drove migration of the core application stack from AWS to Azure, including API Gateway, Redis Cache, Blob Storage, and Azure Functions/Data Factory pipelines.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Converted legacy SSIS Script Tasks (EDI file processing and file import) into scalable, maintainable API-based services.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Implemented Angular Micro Frontend architecture using module federation, unifying multiple remote applications into a single shell interface.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Built a centralized dynamic routing service and a reusable maintenance-page framework for micro-frontend modules.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Designed and delivered a real-time notification system end-to-end using Azure Service Bus and SignalR, with Angular UI components, backend APIs, stored procedures, and rule-engine driven triggers.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Designed and developed microservices architecture spanning Angular front-end applications and .NET Core Web APIs, improving modularity, scalability, and independent deployability of services.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Authored and published private npm and NuGet packages, enabling reusable, version-controlled components across multiple projects and reducing duplicate development effort.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Built a custom Query Viewer application (SSMS-like) enabling secure, controlled database access through a jump server.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Designed the database schema and workflow for a quality-audit system, including DPU/DPO based quality metrics, error classification, and weightage calculations.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Delivered UI/UX improvements (SlickGrid enhancements, dynamic forms, wireframes) and resolved cross-cutting production issues including session tracking, VM login, and report loading performance.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Owned end-to-end production migration and support for multiple application releases, coordinating Angular, API, and SQL deployments; managed source control via Git, contributed to CI/CD pipelines, and deployed applications on Windows IIS Server.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Contributed to architecture and design decisions during solution design discussions; led and mentored team members on coding standards and problem-solving, and shared GitHub Copilot adoption insights in team AI-productivity sessions.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Proactively upskilled across security, cloud, architecture, and full-stack technologies within the first year to take on greater technical ownership.</span></li>
+              </ul>
+              <button class="btn btn-outline btn-sm" id="show-more" type="button" aria-expanded="false" aria-controls="highlights">Show all highlights</button>
+            </div>
+          </article>
+
+          <article class="job reveal" style="--d:.08s">
+            <span class="job-dot" aria-hidden="true"></span>
+            <div class="job-card">
+              <div class="job-head">
+                <span class="job-logo imgwrap"><img decoding="async" width="420" height="241" loading="lazy" src="images/oneyes_logo.png" alt="OneYes Infotech Solutions logo" /><span class="fb alt" aria-hidden="true">OI</span></span>
+                <div class="job-meta">
+                  <h3>Software Developer</h3>
+                  <p><strong>OneYes Infotech Solutions</strong></p>
+                </div>
+                <span class="job-date">Oct 2023 to Mar 2025</span>
+              </div>
+              <ul class="check-list">
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Developed and tested full-stack web application features, gaining hands-on exposure to real-world software development lifecycle and Agile practices.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Collaborated with senior developers on debugging, deployment, and quality assurance of application modules.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Designed, developed, and maintained software applications, contributing to application enhancements and new feature implementation.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Worked on a Learning Management System (LMS) project, contributing to application development, feature implementation, database management, and troubleshooting.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Contributed to the development of a Job Portal project, implementing application features, API integration, database operations, and resolving technical issues.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Performed automation testing using Selenium and developed test cases to validate application functionality, identify defects, and ensure software quality.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Performed coding, debugging, and troubleshooting to identify and resolve technical issues and improve application reliability.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Participated in code reviews and collaborated with cross-functional teams to ensure maintainable and high-quality software solutions.</span></li>
+                <li><svg class="ico"><use href="#i-check"/></svg><span>Maintained technical documentation and contributed to ensuring the quality, performance, and stability of software applications.</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subhead reveal">Internships and Early career</h3>
+        <div class="intern-grid">
+          <article class="intern reveal" style="--d:0s">
+            <button class="intern-media zoomable imgwrap contain g4" type="button" data-caption="Google Supported Virtual Internship" aria-label="Enlarge image: Google Supported Virtual Internship">
+              <span class="fb"><svg class="ico"><use href="#i-phone-app"/></svg></span>
+              <img decoding="async" width="1650" height="1100" loading="lazy" src="images/google-internship.webp" alt="Google supported virtual internship certificate" />
+            </button>
+            <div class="intern-body">
+              <h3>Google Supported Virtual Internship</h3>
+              <p>&ldquo;Android Basics in Kotlin&rdquo;, organized by SmartInternz in collaboration with AICTE, Aug to Sep 2022.</p>
+              <ul class="tags"><li>Android</li><li>Kotlin</li><li>AICTE</li></ul>
+            </div>
+          </article>
+          <article class="intern reveal" style="--d:0.06s">
+            <button class="intern-media zoomable imgwrap contain g2" type="button" data-caption="CISCO AICTE Virtual Internship 2022" aria-label="Enlarge image: CISCO AICTE Virtual Internship 2022">
+              <span class="fb"><svg class="ico"><use href="#i-server"/></svg></span>
+              <img decoding="async" width="1700" height="1134" loading="lazy" src="images/cisco.webp" alt="CISCO AICTE virtual internship certificate" />
+            </button>
+            <div class="intern-body">
+              <h3>CISCO AICTE Virtual Internship 2022</h3>
+              <p>&ldquo;Computer Networks&rdquo;, organized by CISCO Networking Academy with AICTE.</p>
+              <ul class="tags"><li>Cisco</li><li>Computer networks</li><li>AICTE</li></ul>
+            </div>
+          </article>
+          <article class="intern reveal" style="--d:0.12s">
+            <button class="intern-media zoomable imgwrap g6" type="button" data-caption="OneYes Infotech Solutions" aria-label="Enlarge image: OneYes Infotech Solutions">
+              <span class="fb"><svg class="ico"><use href="#i-brief"/></svg></span>
+              <img decoding="async" width="873" height="582" loading="lazy" src="images/oneyes.webp" alt="OneYes Infotech Solutions" />
+            </button>
+            <div class="intern-body">
+              <h3>OneYes Infotech Solutions</h3>
+              <p>Software Developer, Oct 2023 to Mar 2025. Full-stack features for the LMS and Job Portal projects, debugging, deployment and Selenium automation testing.</p>
+              <ul class="tags"><li>Full stack</li><li>Selenium</li><li>Debugging</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section" id="achievements" aria-labelledby="ach-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="pill"><svg class="ico"><use href="#i-award"/></svg>Achievements</span>
+          <h2 id="ach-title">Awards, education and certifications</h2>
+          <p>Recognition from work, contests and college, plus the learning behind it.</p>
+        </header>
+
+                <div class="award-grid">
+          <article class="award reveal" style="--d:0s">
+            <div class="award-media imgwrap g5">
+              <span class="fb"><svg class="ico"><use href="#i-award"/></svg></span>
+              <img decoding="async" width="1116" height="503" loading="lazy" src="images/rnr_vee.jpg" alt="Best Performer Award Vee Healthtek 2025" />
+              <span class="award-year">2025</span>
+            </div>
+            <div class="award-body">
+              <h3>Best Performer Award</h3>
+              <p>Vee Healthtek. Recognized as Best Performer within the first 3 months of joining.</p>
+            </div>
+          </article>
+          <article class="award reveal" style="--d:0.05s">
+            <button class="award-media zoomable imgwrap g3" type="button" data-caption="Regional second prize" aria-label="Enlarge image: Regional second prize">
+              <span class="fb"><svg class="ico"><use href="#i-gamepad"/></svg></span>
+              <img decoding="async" width="1116" height="503" loading="lazy" src="images/nm.webp" alt="Metaverse Challenge 2022 prize ceremony" />
+              <span class="award-year">2022</span>
+            </button>
+            <div class="award-body">
+              <h3>Regional second prize</h3>
+              <p>Metaverse Challenge 2022, TN Naan Mudhalvan AR/VR Development, hosted by InGage Technologies.</p>
+              <a class="card-link" href="https://www.youtube.com/watch?v=G4sroP-V_V8" target="_blank" rel="noopener">Watch the event <svg class="ico"><use href="#i-external"/></svg></a>
+            </div>
+          </article>
+          <article class="award reveal" style="--d:0.1s">
+            <button class="award-media zoomable imgwrap g1" type="button" data-caption="First prize, Pitch Perfect &rsquo;22" aria-label="Enlarge image: First prize, Pitch Perfect &rsquo;22">
+              <span class="fb"><svg class="ico"><use href="#i-award"/></svg></span>
+              <img decoding="async" width="1800" height="1200" loading="lazy" src="images/pitchperfect.webp" alt="Bharath receiving the Pitch Perfect 22 first prize" />
+              <span class="award-year">2022</span>
+            </button>
+            <div class="award-body">
+              <h3>First prize, Pitch Perfect &rsquo;22</h3>
+              <p>Sponsored by IEEE and organized by Knowledge Institute of Technology, for a flood rescue chatbot pitch.</p>
+            </div>
+          </article>
+          <article class="award reveal" style="--d:0.15s">
+            <button class="award-media zoomable imgwrap contain g2" type="button" data-caption="First prize, National Level Coding Contest 2021" aria-label="Enlarge image: First prize, National Level Coding Contest 2021">
+              <span class="fb"><svg class="ico"><use href="#i-code"/></svg></span>
+              <img decoding="async" width="1800" height="1106" loading="lazy" src="images/coding.webp" alt="Certificate of achievement, National Level Coding Contest 2021" />
+              <span class="award-year">2021</span>
+            </button>
+            <div class="award-body">
+              <h3>First prize, National Level Coding Contest</h3>
+              <p>National Level Coding Contest 2021, Kongunadu College of Engineering and Technology.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <span class="skill-ico g2"><svg class="ico">
+                <use href="#i-cap" />
+              </svg></span>
+            <h3>Education</h3>
+        
+            <!-- UG Degree -->
+            <p><strong>B.E., Computer Science and Engineering</strong></p>
+            <p class="muted">Knowledge Institute of Technology, Salem</p>
+            <p class="muted">2020 to 2024 &middot; CGPA : 8.22</p>
+            <br>
+        
+            <!-- 12th HSC -->
+            <p><strong>12th (HSC)</strong></p>
+            <p class="muted">Holy Cross Matriculation Higher Secondary School, Salem</p>
+            <p class="muted">2020 &middot; Percentage: 74.5%</p>
+            <br>
+        
+            <!-- 10th SSLC -->
+            <p><strong>10th (SSLC)</strong></p>
+            <p class="muted">Holy Cross Matriculation Higher Secondary School, Salem</p>
+            <p class="muted">2018 &middot; Percentage: 86.6%</p>
+          </article>
+
+          <article class="edu-card reveal" style="--d:.06s">
+            <span class="skill-ico g5"><svg class="ico"><use href="#i-shield"/></svg></span>
+            <h3>Certifications</h3>
+            <ul class="plain">
+              <li>AWS Security, Identity and Compliance (Udemy)</li>
+              <li>IT Academy: Cloud and Virtualization Concepts (VMware)</li>
+              <li>The Fundamentals of Network Security (Udemy)</li>
+              <li>Introduction to Cloud (TNSDC, powered by IBM)</li>
+              <li>Junior Web Developer (TN Skills and Naan Mudhalvan)</li>
+            </ul>
+          </article>
+        </div>
+
+        <article class="pub-card reveal">
+          <button class="pub-media zoomable imgwrap g4" type="button" data-caption="Ocean Guard publication" aria-label="Enlarge image: Ocean Guard publication">
+            <span class="fb"><svg class="ico"><use href="#i-book"/></svg></span>
+            <img decoding="async" width="750" height="343" loading="lazy" src="images/research_paper_ocean_guard.png" alt="Ocean Guard publication page" />
+          </button>
+          <div class="pub-body">
+            <span class="pill"><svg class="ico"><use href="#i-book"/></svg>Publication</span>
+            <h3>Ocean Guard: Advanced Technology for Deep-Sea Fishermen Monitoring and Maritime Safety</h3>
+            <p>Research paper published in JETIR, based on my Android application for deep-sea fishermen monitoring and maritime safety.</p>
+            <a class="btn btn-primary btn-sm" href="https://www.jetir.org/view?paper=JETIR2403A78" target="_blank" rel="noopener">Read the paper <svg class="ico"><use href="#i-external"/></svg></a>
           </div>
-        </div>
+        </article>
       </div>
+    </section>
 
+    <!-- Contact -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-info">
+            <h2 id="contact-title">Let's build something great together</h2>
+            <p>Have a project, a role or a question? Send me a message and I'll get back to you.</p>
 
-    </div>
-    </div>
-  </section>
-  <!-- Internships section ends here -->
+            <ul class="contact-list">
+              <li><span class="feature-ico"><svg class="ico"><use href="#i-mail"/></svg></span><div><span class="muted-light">Email</span><a href="mailto:bharathvishnu2522003@gmail.com">bharathvishnu2522003@gmail.com</a></div></li>
+              <li><span class="feature-ico"><svg class="ico"><use href="#i-phone"/></svg></span><div><span class="muted-light">Phone</span><a href="tel:+919443589239">+91 94435 89239</a></div></li>
+              <li><span class="feature-ico"><svg class="ico"><use href="#i-pin"/></svg></span><div><span class="muted-light">Location</span><span>Salem, Tamil Nadu, India</span></div></li>
+            </ul>
 
-  <!-- publication section starts here -->
-  <div class="heading text-center pt-5">
-    <div class="row justify-content-evenly mt-4 px-4">
-      <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
-        <div class="card">
-          <h3>Check My Publications</h3>
-
-          <img src="images/publication.png" class="card-img-top" alt="Ocean Guard Publication " />
-          <div class="card-body text-center">
-            <h4 class="card-title" style="margin-top: 3%;">Ocean Guard: Advanced Technology for Maritime Safety</h4>
-            <span class="badge bg-secondary badge-pill">Android</span>
-            <span class="badge bg-secondary badge-pill">Published</span>
-            <br />
-            <a href="https://www.jetir.org/view?paper=JETIR2403A78" target="_blank" class="read-more-btn link">Read
-              Publication</a>
-
+            <ul class="socials socials-light" aria-label="Social links">
+              <li><a href="https://linkedin.com/in/c-j-bharath" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg class="ico ico-fill"><use href="#i-linkedin"/></svg></a></li>
+              <li><a href="https://github.com/cjbharath" target="_blank" rel="me noopener" aria-label="GitHub"><svg class="ico ico-fill"><use href="#i-github"/></svg></a></li>
+              <li><a href="https://wa.me/919443589239" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico ico-fill"><use href="#i-whatsapp"/></svg></a></li>
+            </ul>
           </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Hi Bharath, I'd like to discuss a role or a project. Share a few details about the opportunity or your requirement, and the best way to reach you." required></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Send message <svg class="ico"><use href="#i-send"/></svg></button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite">This opens your email app with the message ready to send.</p>
+          </form>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#top" aria-label="Back to top">
+        <span class="footer-logo imgwrap"><img decoding="async" width="320" height="320" src="images/cj-white.png" alt="" /><span class="fb" aria-hidden="true">CJ</span></span>
+        <span>Bharath Vishnu C J</span>
+      </a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+      </nav>
+      <ul class="socials socials-light" aria-label="Social links">
+        <li><a href="https://linkedin.com/in/c-j-bharath" target="_blank" rel="me noopener" aria-label="LinkedIn"><svg class="ico ico-fill"><use href="#i-linkedin"/></svg></a></li>
+        <li><a href="https://github.com/cjbharath" target="_blank" rel="me noopener" aria-label="GitHub"><svg class="ico ico-fill"><use href="#i-github"/></svg></a></li>
+        <li><a href="mailto:bharathvishnu2522003@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-mail"/></svg></a></li>
+        <li><a href="https://wa.me/919443589239" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico ico-fill"><use href="#i-whatsapp"/></svg></a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Bharath Vishnu C J. Software Engineer based in Salem, Tamil Nadu, India. All rights reserved.</p>
     </div>
-  </div>
-  <!-- publication section ends here -->
-
-
-
-  <!-- contact section starts -->
-  <section class="contact py-5" id="contact">
-    <div class="heading text-center">
-      <h3>Get in Touch</h3>
-    </div>
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-5 col-10 contact-details" data-aos="slide-right" style="padding-left: 6%;">
-        <div style="display: flex;">
-          <i class="bi bi-geo-alt-fill"></i>
-          <p>382 A, E.C.G Nagar , Alagapuram pudur , Salem -636016</p>
-        </div>
-        <div style="display: flex;">
-          <i class="bi bi-telephone-fill"></i>
-          <p>+91 9443589239</p>
-        </div>
-
-        <div style="display: flex;">
-
-          <i class="bi bi-send-fill"></i>
-
-          <p>bharathvishnu2522003@gmail.com</p>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-  <!-- contact section ends here -->
-
-  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
-  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
-    <i class="bi bi-arrow-up"></i>
-  </button>
-
-  <!-- footer section starts  -->
-  <footer class="text-center text-muted py-4">
-    <h3 class="text-white pt-4" data-aos="fade-up"><a href="index.html"><img src="./images/cj-white.png" width="120px"
-          height="120px" alt="BHARATH VISHNU C J"></a></h3>
-    <div class="link-group mt-5" data-aos="fade-up">
-      <a href="#home">Home</a>
-      <div class="vr"></div>
-      <a href="#about">Skills</a>
-      <div class="vr"></div>
-      <a href="#service">Expertise</a>
-      <div class="vr"></div>
-      <a href="#experience">Experience</a>
-      <div class="vr"></div>
-      <a href="#portfolio">Portfolio</a>
-
-      <div class="vr"></div>
-      <a href="#contact">Contact</a>
-      <div class="vr"></div>
-
-      <a href="about.html">About</a>
-    </div>
-    <div class="social-links mt-5" data-aos="fade-up">
-      <a href="mailto:bharathvishnu2522003@gmail.com"><button id="email" class="rounded-pill email">
-          <i class="bi bi-envelope"></i>
-        </button></a>
-      <a href="https://wa.me/919443589239"><button id="whatsapp" class="rounded-pill whatsapp">
-          <i class="bi bi-whatsapp"></i>
-        </button></a>
-      <a href="https://linkedin.com/in/c-j-bharath"><button id="linkedin" class="rounded-pill linkedin">
-          <i class="bi bi-linkedin"></i>
-        </button></a>
-
-    </div>
-    <hr class="text-muted my-4" />
-
-
   </footer>
-  <!-- footer section ends here -->
 
-  <!-- bootstrap javascript cdn link  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <figure>
+      <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" />
+      <figcaption id="lightbox-cap"></figcaption>
+    </figure>
+    <button class="lightbox-close" type="button" aria-label="Close image viewer"><svg class="ico"><use href="#i-x"/></svg></button>
+  </dialog>
 
-  <!-- AOS library javascript link  -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    // initializing AOS library
-    AOS.init({
-      duration: 1000,
-      offset: 50,
-    });
-  </script>
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top"><svg class="ico"><use href="#i-up"/></svg></button>
 
-
-
-
-
-
-  <!-- custom js file linking -->
-  <script src="js/script.js"></script>
-
-  <script>
-  window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    preloader.style.transition = 'opacity 0.5s ease'; // slower fade
-    preloader.style.opacity = '0';
-    setTimeout(() => {
-      preloader.style.display = 'none';
-    }, 500); // matches the 1.5s fade duration
-  });
-</script>
-
-
+  <script src="js/main.js"></script>
 </body>
-
 </html>
