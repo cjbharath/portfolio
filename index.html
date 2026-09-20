@@ -8,7 +8,7 @@
     (function () {
       var t = null;
       try { t = localStorage.getItem('theme'); } catch (e) {}
-      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      if (!t) t = 'dark';
       document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
@@ -24,7 +24,7 @@
   <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#f6f6fc" />
+  <meta name="theme-color" content="#0c0a1d" />
   <link rel="canonical" href="https://c-j-bharath-portfolio.netlify.app/" />
   <link rel="alternate" hreflang="en" href="https://c-j-bharath-portfolio.netlify.app/" />
   <link rel="alternate" hreflang="x-default" href="https://c-j-bharath-portfolio.netlify.app/" />
